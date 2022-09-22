@@ -11,15 +11,17 @@ $('.nav-menu__close, .overlay-mobile').on('click', function (e) {
 });
 
 
-$('.btn-search-mobile').on('click', function (e) {
+// $('.btn-search-mobile').on('click', function (e) {
+//     e.preventDefault();
+//     $('.form-search-mobile').fadeToggle();
+// });
+
+$('.dropdown-menu .dropdown-menu-list .dropdown').on('click', function(e) {
+    e.stopPropagation();
     e.preventDefault();
-    $('.form-search-mobile').fadeToggle();
+    $(this).addClass('show').find('.dropdown-menu').addClass('show');
 });
 
-$('.dropdown-menu .dropdown-menu-list > li > a').on('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-});
 
 $(document).ready(function () {
     var input = document.querySelector(".phone-input1");
@@ -63,6 +65,13 @@ $(document).ready(function () {
     // });
 
 });
+
+// invoke plugin
+$('.inp-file').MultiFile({
+    list: '.files-list'
+});
+
+
 
 
 
@@ -273,20 +282,20 @@ $('.btn-sorting').on('click', function () {
 
 
 // this is your selector
-$.fileup({
-    url: window.location.pathname + window.location.search,
-    inputID: 'upload-demo',
-    queueID: 'upload-demo-queue',
-    dropzoneID: '',
-    files: [],
-    fieldName: 'filedata',
-    extraFields: {},
-    sizeLimit: 0,
-    filesLimit: 0,
-    method: 'post',
-    timeout: null,
-    autostart: false,
-});
+// $.fileup({
+//     url: window.location.pathname + window.location.search,
+//     inputID: 'upload-demo',
+//     queueID: 'upload-demo-queue',
+//     dropzoneID: '',
+//     files: [],
+//     fieldName: 'filedata',
+//     extraFields: {},
+//     sizeLimit: 0,
+//     filesLimit: 0,
+//     method: 'post',
+//     timeout: null,
+//     autostart: false,
+// });
 
 
 
