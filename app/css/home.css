@@ -607,7 +607,12 @@
   .form-callback .checkbox {
     color: #fff;
     width: 100%;
-    margin: 20px 0 0; }
+    margin: 20px 0 0;
+    font-size: 14px; }
+    .form-callback .checkbox a {
+      color: #fff; }
+  .form-callback .checkbox-custom {
+    margin: 0 20px 0 0; }
 
 .marks {
   margin: 80px 0 60px; }
@@ -913,7 +918,7 @@ a.list-contacts-item:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #3570F2;
+  color: #4F86FF;
   width: 100%;
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on; }
@@ -927,15 +932,15 @@ a.list-contacts-item:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    padding: 5px; }
+    padding: 3px; }
     .list-maps-links__icon img {
       max-height: 100%; }
   .list-maps-links__text {
-    width: calc(100% - 30px);
-    padding: 0 0 0 10px; }
+    padding: 0 0 0 10px;
+    text-decoration: underline; }
   .list-maps-links:hover {
     color: #303030; }
 

@@ -8,13 +8,8 @@ footer .list-maps {
     margin: 0 0 10px; }
     footer .list-maps li:last-child {
       margin: 0; }
-  footer .list-maps .list-maps-links__icon {
-    width: 20px;
-    height: 20px;
-    padding: 3px; }
   footer .list-maps .list-maps-links__text {
     color: #4F86FF;
-    text-decoration: underline;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }

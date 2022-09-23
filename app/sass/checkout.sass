@@ -251,140 +251,6 @@
 
 
 
-//.label-file-result
-//  width: 100%
-//  display: flex
-//  align-items: center
-//  flex-wrap: wrap
-//  justify-content: flex-start
-//  margin: 10px auto 0
-
-//border: 1px solid #DDE0DC
-//background: transparent
-//height: 55px
-//color: #2A2D28
-
-//.input-text
-//  color: #656871
-//  font-weight: 300
-//
-//.list-checkbox
-//  display: flex
-//  align-items: center
-//  flex-wrap: wrap
-//
-//  li
-//    width: auto
-//    margin: 0 50px 10px 0
-//
-//    &:last-child
-//      margin-right: 0
-//
-//.focus
-//  .label-wrapper
-//    display: block
-//    top: -10px
-//    transform: none
-//    left: 0
-//
-//  .input-text
-//    padding: 3px
-//    background: #FAFAFA
-//    width: fit-content
-//
-//    &:before
-//      display: none
-//
-//  input, select, textarea
-//    border: 1px solid #B0B0B0
-//
-//h3
-//  margin: 0 0 15px
-//  color: #2A2D28
-//  font-size: 21px
-//  letter-spacing: 0.02em
-
-
-
-
-//.checkout-files
-//  margin-top: 20px
-//
-
-
-
-
-//.fileup-file
-//  margin: 0 5px 5px 0
-//  display: flex
-//  align-items: center
-//  justify-content: center
-//  background: transparent
-//  position: relative
-//  padding: 0
-//  border: none
-//    radius: 0
-//  max-width: none
-//
-//.fileup-file.fileup-image .fileup-preview
-//  width: 67px
-//  height: 50px
-//  border: 1px solid #C4C4C4
-//    radius: 5px
-//  display: flex
-//  align-items: center
-//  justify-content: center
-//  overflow: hidden
-//
-//  img
-//    width: 100%
-//
-//.fileup-file.fileup-image .fileup-preview img
-//  max-width: none
-//  max-height: none
-//
-//.fileup-file .fileup-controls
-//  margin: 0
-//  display: flex
-//  align-items: center
-//  justify-content: center
-//
-//.fileup-file.fileup-image .fileup-container
-//  margin: 0
-//  position: absolute
-//  right: 4px
-//  top: 4px
-//
-//.label-file-result__delete, .fileup-file .fileup-controls .fileup-remove
-//  width: 10px
-//  height: 10px
-//  position: relative
-//  display: flex
-//  align-items: center
-//  justify-content: center
-//  z-index: 1
-//  background: transparent
-//  right: 0
-//  top: 0
-//  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.45))
-//
-//  &:before, &:after
-//    content: ''
-//    position: absolute
-//    background: #fff
-//    width: 1px
-//    height: 100%
-//
-//  &:before
-//    transform: rotate(45deg)
-//
-//  &:after
-//    transform: rotate(135deg)
-//
-//.fileup-file .fileup-controls .fileup-upload, .fileup-file .fileup-controls .fileup-abort, .fileup-file .fileup-clear, .fileup-progress, .fileup-result, .fileup-description
-//  display: none
-
-
 //.page-thanks
 .page-thanks
   .btn
@@ -622,3 +488,31 @@
 
       img
         width: 100%
+
+//page-error
+.page-error
+  position: relative
+  z-index: 1
+  h1
+    margin: 0 auto 10px
+  .box-text
+    font-size: 18px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 57px
+    background: linear-gradient(360deg, #ABABAB 0%, #D9D9D9 100%)
+  &__content
+    text-align: center
+  .btn
+    margin: 30px auto
+    max-width: 280px
+    width: 100%
+  &__image
+    margin: 25px auto
+    @include d-flex
+
+

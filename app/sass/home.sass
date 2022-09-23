@@ -529,7 +529,11 @@
     color: #fff
     width: 100%
     margin: 20px 0 0
-
+    font-size: 14px
+    a
+      color: #fff
+  .checkbox-custom
+    margin: 0 20px 0 0
 
 
 //.callback-image
@@ -819,23 +823,23 @@ a.list-contacts-item
 .list-maps-links
   display: flex
   align-items: center
-  color: $accent
+  color: #4F86FF
   width: 100%
   font-feature-settings: 'pnum' on, 'lnum' on
 
   &__icon
     @include d-flex
-    width: 30px
-    height: 30px
+    width: 20px
+    height: 20px
     border-radius: 50%
-    padding: 5px
+    padding: 3px
 
     img
       max-height: 100%
 
   &__text
-    width: calc(100% - 30px)
     padding: 0 0 0 10px
+    text-decoration: underline
 
   &:hover
     color: $black
