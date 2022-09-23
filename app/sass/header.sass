@@ -2,8 +2,6 @@
 
 header
   margin: 0 0 1px
-  //.form-search
-  //  margin: 0 auto
   .mail
     margin: 0 auto
 
@@ -154,26 +152,7 @@ header
     font-size: 16px
   .mail
     font-size: 16px
-  &__close
-    display: none
-    align-items: center
-    justify-content: center
-    width: 22px
-    height: 22px
-    position: absolute
-    top: -10px
-    right: 10px
-    cursor: pointer
-    &:before, &:after
-      content: ''
-      position: absolute
-      background: #848484
-      width: 1px
-      height: 100%
-    &:before
-      transform: rotate(45deg)
-    &:after
-      transform: rotate(135deg)
+
 
 .language-box
   display: none
@@ -216,7 +195,16 @@ header
       margin-top: 0
   .dropdown-toggle
     &:after
-      display: none
+      content: ''
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 12px
+      min-width: 12px
+      height: 6px
+      margin: 0 0 0 8px
+      background: url("../img/arrow-bottom-white.svg") no-repeat center
+        size: 100%
 
 
 .dropdown-menu-list
@@ -243,7 +231,7 @@ header
         display: flex
         align-items: center
         justify-content: center
-        margin: 0 8px 0 0
+        margin: 4px 8px auto 0
         height: 12px
         width: 10px
         min-width: 10px
@@ -251,6 +239,9 @@ header
           size: 100%
       &:hover
         color: $accent
+        &:after
+          background: url("../img/arrow-right-accent.svg") no-repeat center
+            size: 100%
     .dropdown-toggle
       &:after
         content: ''
@@ -264,6 +255,9 @@ header
   .dropdown.show
     .dropdown-toggle
       color: $accent
+      &:after
+        background: url("../img/arrow-right-accent.svg") no-repeat center
+          size: 100%
   .dropdown-menu
     margin: 9px 0 0 4px
     left: 100% !important
@@ -298,7 +292,19 @@ header
     background: #fff
     border-radius: 3px
     display: block
-
+  &.click
+    padding: 5px
+    span
+      position: absolute
+      width: 18px
+      top: 20px
+      left: 12px
+      &:nth-child(2)
+        display: none
+      &:first-child
+        transform: rotate(45deg)
+      &:last-child
+        transform: rotate(135deg)
 
 .btn-search
   display: none

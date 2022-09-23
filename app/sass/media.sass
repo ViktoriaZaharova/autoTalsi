@@ -55,12 +55,6 @@
     h2
       margin: 0 50px 0 0
 
-
-
-
-
-
-
   .main-content
     max-width: 550px
 
@@ -68,11 +62,29 @@
       font-size: 40px
 
   .main-slider__item-img
-    width: 700px
+    width: 950px
 
   .filter-wrapper
-    margin: -30px 0 30px
-    padding: 30px
+    margin: -50px 0 60px
+    padding: 30px 22px
+
+  .form-filter
+    .label-mark
+      max-width: 176px
+    button
+      padding: 10px 20px
+      max-width: 200px
+
+  .interested-slider
+    padding: 0 27px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+
+
+
 
   //.callback-image
   //  max-width: 300px
@@ -95,8 +107,8 @@
     width: 100%
 
 
-  .menu .dropdown-menu
-    padding: 20px
+  //.menu .dropdown-menu
+  //  padding: 20px
 
 
 //.footer-row
@@ -199,11 +211,17 @@
 
 
 /* Medium Devices, Desktops
-@media only screen and (max-width: 1050px)
+@media only screen and (max-width: 1070px)
   .list-language
     li
       margin: 0 10px 0 0
 
+  .all-models-result
+    margin: 5px 0 0
+
+  .list-tags
+    margin-right: 0
+    width: 100%
 
 
 @media only screen and (max-width: 992px)
@@ -236,46 +254,69 @@
     right: 10px
     bottom: -125px
 
+  body
+    padding: 68px 0 0
+
   header
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 5
+    background: #ffffff
     border-bottom: 1px solid #DCDDE0
     .list-language, .header-box
       display: none
     .header-contacts-box
       display: flex
     .logo
-      margin: 0 auto 0 0
+      margin: 0 auto 0 20px
 
   .header-bottom
     display: none
     position: fixed
-    left: 0
-    top: 0
+    right: 0
+    top: 68px
     z-index: 4
     background: #fff
-    max-width: 300px
+    max-width: 287px
     width: 100%
-    height: 100%
+    height: calc(100% - 68px)
     overflow-y: auto
-    padding: 20px 0
+    padding: 20px 5px
     .header-box
       display: flex
-      margin: 0 0 20px
-    .logo
+      flex-wrap: wrap
+      margin: 0 0 15px
+      font-size: 15px
+      p
+        width: 100%
+        margin: 0
+
+    .list-language
       display: flex
-      margin: 0 auto 20px
-    .header-contacts-box
-      padding: 0
+      margin: 0 0 15px
+      width: fit-content
+      padding: 15px 38px 15px 0
+      border:
+        top: 1px solid #DCDDE0
+        bottom: 1px solid #DCDDE0
+      li
+        margin: 0 20px 0 0
+        &:last-child
+          margin: 0
+
 
   .btn-burger, .btn-search
     display: flex
 
   .menu
-    margin: 0 0 30px
+    margin: 0 0 17px
     width: 100%
     font-size: 16px
     li
       width: 100%
-      margin: 0 0 15px
+      margin: 0 0 20px
       &:last-child
         margin: 0
       a
@@ -288,27 +329,126 @@
       position: relative !important
       min-width: auto
       width: 100%
-      padding: 20px 10px
+      padding: 0
+      margin: 20px 0 0
       box-shadow: none
       border-radius: 0
       left: 0 !important
       top: 0 !important
       transform: none !important
-      margin: 0
+      li
+        margin: 0 0 15px
+        &:last-child
+          margin: 0
       .dropdown-menu
-        padding: 10px
+        padding: 0 0 0 15px
+        margin: 15px 0
+        li
+          margin: 0 0 10px
+          &:last-child
+            margin: 0
       li
         a
-          font-size: 14px
+          font-size: 13px
+    .dropdown-toggle
+      &:after
+        background: url("../img/arrow-bottom.svg") no-repeat center
+          size: 100%
+    >.dropdown.show
+      > .dropdown-toggle
+        &:after
+          transform: rotate(180deg)
 
-  .nav-menu__close
-    display: flex
+  .dropdown-menu-list li
+    a
+      &:before
+        margin-top: 3px
+    .dropdown-toggle
+      position: relative
+      padding: 0 30px 0 0
+      &:after
+        position: absolute
+        right: 0
+        top: 5px
 
   .subscribe
     h2
       margin: 0 auto 20px
       width: 100%
       text-align: center
+
+  .home
+    padding: 40px 0 57px
+
+  .main-content
+    max-width: 400px
+    padding: 0 0 20px
+
+    h1
+      font-size: 30px
+
+  .main-slider__item-img
+    max-width: 550px
+    right: -100px
+
+  .filter-wrapper
+    h2
+      margin: 0 0 17px
+
+  .form-filter
+    label
+      margin: 0 0 8px
+    label, .label-mark
+      max-width: 49%
+    .range_val
+      width: 100%
+    button
+      max-width: 290px
+      width: 100%
+      margin: 20px auto 0
+
+  .ui-widget.ui-widget-content
+    margin: 12px auto 0
+    background: #DDE0DC
+
+  .catalog-car
+    padding: 0 0 60px
+    h2
+      margin: 0 0 20px
+
+  .professional-image
+    margin: 0 auto 30px
+
+  h2
+    font-size: 26px
+
+  .professional-content
+    .btn
+      margin: 20px auto 0
+
+  .interested-card
+    padding: 30px 20px
+    &__icon
+      width: 60px
+      height: 60px
+      margin: 0 0 20px
+      padding: 15px
+    h3
+      font-size: 22px
+
+  .about-company
+    margin: 0 0 60px
+    .decor2
+      top: -80px
+    .decor4
+      top: -70px
+
+
+  .about-company__image
+    min-width: auto
+    width: 100%
+    margin: 0 auto
+
 
 
 
@@ -318,16 +458,6 @@
   //.form-search
   //  max-width: 300px
 
-  .main-content
-    max-width: 400px
-    padding: 0
-
-    h1
-      font-size: 30px
-
-  .main-slider__item-img
-    max-width: 550px
-
   .main-form
     max-width: 320px
     padding: 40px 25px
@@ -335,13 +465,11 @@
     h3
       font-size: 18px
 
-  h2
-    font-size: 26px
-
-    .icon
-      max-width: 22px
-      min-width: 22px
-      margin: 0 0 0 5px
+    //
+    //.icon
+    //  max-width: 22px
+    //  min-width: 22px
+    //  margin: 0 0 0 5px
 
   //.callback-image, .callback-v2 .callback-image
   //  max-width: 360px
@@ -791,48 +919,41 @@
 /* Small Devices, Tablets
 @media only screen and (max-width: 870px)
   .header-top
-    padding: 10px 0
+    padding: 10px 0 11px
 
   .logo
-    max-width: 144px
+    max-width: 148px
 
+  body
+    padding: 64px 0 0
 
-
-
+  .header-bottom
+    top: 64px
+    height: calc(100% - 64px)
 
   .home
-    .container
-      &:before
-        width: 436px
-        height: 436px
-        top: 70px
-        left: 50%
-        transform: translate(-50%, 0)
-
-      &:after
-        width: 233px
-        height: 233px
-        top: 171px
-        left: 50%
-        transform: translate(-50%, 0)
-        filter: blur(200px)
-
     h1
       margin: 0 auto 20px
 
       strong
         display: inline
 
-
   .main-content
     max-width: none
     text-align: center
-
+    padding: 0
+    .btn
+      margin: 0 auto
     .box-text
-      margin: 0 auto 24px
+      margin: 0 auto 30px
 
       ul
-        column-count: 2
+        margin: 0 auto
+        font-size: 14px
+        li
+          margin: 0 0 10px
+          &:last-child
+            margin: 0
 
   .main-form
     margin: 20px auto 0
@@ -843,13 +964,18 @@
     right: 0
     transform: none
     max-width: 700px
-    margin: 0 auto
+    margin: 0 auto 7px
+    width: 100%
+    z-index: 1
 
-    img
-      display: none
 
-    .img-mobile
-      display: block
+
+
+
+
+
+
+
 
   .home-manslizing
     .container
@@ -992,27 +1118,32 @@
         span
           width: 61%
 
+  .advantages-box
+    margin: 0 auto 30px
+
+  .about-company
+    .decor
+      display: none
+    &__image
+      margin: 0 auto 30px
 
 
 
 
-
-  .catalog-car
-    padding: 0 0 60px
 
   //.list-marks li
   //  width: 20%
 
-  .advantages-box
-    padding: 19px 15px 19px 20px
-
-    &__icon
-      width: 60px
-      min-width: 60px
-
-    &__body
-      width: calc(100% - 60px)
-      padding: 0 0 0 30px
+  //.advantages-box
+  //  padding: 19px 15px 19px 20px
+  //
+  //  &__icon
+  //    width: 60px
+  //    min-width: 60px
+  //
+  //  &__body
+  //    width: calc(100% - 60px)
+  //    padding: 0 0 0 30px
 
 
 
@@ -1308,17 +1439,17 @@
   .btn-accent:after
     width: 77px
 
-  .social-icon-inst
-    width: 30px
-    height: 36px
+  //.social-icon-inst
+  //  width: 30px
+  //  height: 36px
+  //
+  //.social-icon-tg
+  //  width: 34px
+  //  height: 36px
 
-  .social-icon-tg
-    width: 34px
-    height: 36px
-
-  .social-icon-fb
-    width: 19px
-    height: 36px
+  //.social-icon-fb
+  //  width: 19px
+  //  height: 36px
 
   .mb-30
     margin: 0 0 15px
@@ -1766,25 +1897,121 @@
         width: 30px
         height: 30px
 
+  header
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 10
 
+  body
+    padding: 109px 0 0
 
-
-
-
-
+  .header-bottom
+    height: calc(100% - 109px)
+    top: 109px
 
   .home
-    .container
-      padding: 50px 15px 30px
-
-    .box-text
-      margin: 0 0 10px
-
-      ul
-        font-size: 13px
-
     h1
-      font-size: 29px
+      max-width: 326px
+    .box-text
+      margin: 0 auto 20px
+      ul
+        max-width: 308px
+
+  .main-slider__item-img
+    width: 428px
+    min-width: 428px
+    margin: 0 auto 7px
+
+  .filter-wrapper
+    border-radius: 30px
+
+  .form-filter
+    select
+      height: 50px
+    label, .label-mark
+      width: 100%
+      max-width: none
+    .range_val
+      input
+        height: 50px
+        padding: 23px 20px 5px
+        font-size: 16px
+      &-text
+        top: 8px
+        left: 20px
+      label
+        width: calc(50% - 6px)
+
+  .card-footer__item
+    margin: 0 auto 0 0
+
+  .mb-40
+    margin-bottom: 20px
+
+  .professional-image
+    .decor
+      display: none
+
+  .professional
+    .box-text
+      margin: 0 0 17px
+    ul
+      margin: 0 0 12px
+    .btn
+      margin: 18px auto 0
+      width: 100%
+
+  .m-80
+    margin: 60px 0
+
+  .advantages
+    margin: 60px 0 30px
+    h2
+      margin: 0 auto 30px
+
+  .advantages-box
+    font-size: 16px
+    line-height: 120%
+    max-width: 155px
+    margin: 0 auto 30px
+    br
+      display: none
+    &__icon
+      width: 70px
+      height: 70px
+      min-width: 70px
+      margin: 0 auto 10px
+      padding: 17px
+
+  .interested-slider
+    .slick-dots
+      margin: 0 auto
+
+  .interested
+    h2
+      max-width: 320px
+
+  .brands-section
+    margin: 60px 0 40px
+    h2
+      margin: 0 auto 20px
+    .btn
+      margin: 30px auto 0
+
+  .brands-slider
+    .slick-list
+      margin: 0 -5px
+    .slick-slide
+      padding: 0 5px
+
+  .slick-dots
+    margin: 20px auto 0
+
+
+
+
 
   .img-mobile
     display: block
@@ -1812,40 +2039,12 @@
   .btn-toggle
     margin: 20px auto 0
 
-  .filter-wrapper
-    display: none
-    position: absolute
-    z-index: 5
-    width: 100%
-    left: 50%
-    top: 0
-    transform: translate(-50%, 0)
-    margin: auto
-    padding: 30px 20px 40px
-    border-radius: 6px
-
-    h2
-      display: none
-
   .btn-close__filter
     display: flex
 
   .all-models-result
     margin: 10px 0 0
     text-align: left
-
-  .catalog-car
-    padding: 30px 0 60px
-
-
-
-  .mb-40
-    margin-bottom: 20px
-
-
-
-  .card-footer__item
-    margin: 0 10px 0 0
 
 
   .p-80
@@ -2402,6 +2601,35 @@
 //  top: -13px
 //  left: -89px
 
+@media (max-width: 480px)
+  .card-footer
+    flex-wrap: wrap
+    padding: 0
+    margin: 8px 0 0
+    &__item
+      width: 100%
+      margin: 0
+      display: flex
+      align-items: flex-end
+      flex-wrap: wrap
+      &:last-child
+        margin: 6px 0 0
+
+  .card
+    .old-price
+      position: relative
+      margin: 0 10px 0 0
+
+  .card-body
+    padding: 10px
+
+  .card-title
+    font-size: 18px
+
+
+
+
+
 @media (max-width: 420px)
   //.header-top
   //  .phone-icon
@@ -2421,76 +2649,64 @@
       border-radius: 10px
       margin: 0 auto 6px
 
+  .main-slider__item-img
+    margin: 6px -45px 7px
 
-
-
-
-
-  .card
-    &-img
-      height: 103px
-
-    &-body
-      padding: 10px 5px 8px
-
-    &-title
-      font-size: 12px
-      margin: 0 0 7px
-      font-weight: 800
-
-    &-footer
-      padding: 7px 0 0 0
-      margin: 3px 0 0
-      flex-wrap: wrap
-
-      &__item
-        width: 100%
-        margin: 0 0 5px
-        display: flex
-        align-items: center
-        flex-wrap: wrap
-        font-size: 14px
-
-        &:last-child
-          margin: 0
-
-        p
-          margin: 0 5px 0 0
-          font-size: 12px
-
-  .list-characteristics
-    font-size: 9px
-
-    li
-      height: 17px
-
-    .icon
-      display: none
-
-    p
-      padding: 3px 5px
-
-  .label-list
-    font-size: 8px
-    padding: 8px 7px
-
-    li
-      height: 12px
-      padding: 1px 5px
-
-    .logo-company
-      max-width: 41px
-
-  .country-flag
-    max-width: 22px
-    min-width: 22px
-    height: 17px
+  .card-img
+    height: 102px
 
   .card-col
     display: none
-
+    .price, .new-price
+      font-size: 18px
+      line-height: normal
     &:nth-child(-n+8)
       display: block
+
+  .catalog-car-row
+    margin: 0 -5px
+    .card-col
+      padding: 0 5px
+
+  .list-characteristics
+    font-size: 10px
+
+    li
+      height: 19px
+
+  .label-list
+    font-size: 10px
+    padding: 5px
+
+    li
+      height: 20px
+      padding: 1px 6px
+
+  .list-tags
+    justify-content: space-between
+    li
+      margin: 0
+      &:first-child
+        width: 58%
+      &:last-child
+        width: 40%
+      a
+        width: 100%
+        padding: 9.5px 15px
+
+  .all-models-result
+    width: 100%
+
+
+
+
+
+  //.country-flag
+  //  max-width: 22px
+  //  min-width: 22px
+  //  height: 17px
+
+
 
   .list-characteristics-product
     li
@@ -2511,13 +2727,13 @@
 
 
 @media (max-width: 350px)
-  .home
-    h1
-      font-size: 24px
+  .card
+    .old-price
+      font-size: 12px
+    .new-price, .price
+      font-size: 16px
 
-    .box-text
-      ul
-        font-size: 12px
+
 
   .main-form
     h3

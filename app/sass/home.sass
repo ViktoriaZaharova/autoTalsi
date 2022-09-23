@@ -21,6 +21,7 @@
   .box-text
     ul
       max-width: 379px
+      font-weight: normal
       margin: 0
       display: flex
       flex-wrap: wrap
@@ -252,6 +253,7 @@
 
 
 .list-tags
+  text-align: center
   display: flex
   align-items: flex-start
   flex-wrap: wrap
@@ -274,6 +276,7 @@
   border: 1px solid #DDE0DC
     radius: 40px
   background: #F4F7FC
+  text-align: center
 
 
 .card
@@ -372,6 +375,9 @@
   color: #2A2D28
   border: none
   position: relative
+  border-radius: 0
+  &:last-child
+    border-radius: 0
   &__item
     margin: 0 auto 0 0
 
@@ -484,6 +490,7 @@
   position: relative
   z-index: 1
   img
+    width: 100%
     position: relative
     z-index: 1
     border-radius: 30px
@@ -661,7 +668,7 @@
     align-items: stretch
   .slick-slide
     padding: 0 15px
-    margin: 34px auto
+    margin: 34px 0
     height: auto
 
 .interested-card
