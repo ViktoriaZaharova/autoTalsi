@@ -4,10 +4,6 @@ footer .logo {
 
 footer .list-maps {
   margin: 10px 0 0; }
-  footer .list-maps li {
-    margin: 0 0 10px; }
-    footer .list-maps li:last-child {
-      margin: 0; }
   footer .list-maps .list-maps-links__text {
     color: #4F86FF;
     width: -webkit-fit-content;

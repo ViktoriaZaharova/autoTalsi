@@ -15,21 +15,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0; }
-  .form-group label {
-    margin: 0 0 10px;
-    width: calc(50% - 5px); }
-    .form-group label input {
-      text-align: center;
-      color: #2A2D28;
-      padding: 0 5px; }
-      .form-group label input::-webkit-input-placeholder {
-        color: #2A2D28; }
-      .form-group label input::-moz-placeholder {
-        color: #2A2D28; }
-      .form-group label input::-ms-input-placeholder {
-        color: #2A2D28; }
-      .form-group label input::placeholder {
-        color: #2A2D28; }
 
 .sidebar {
   max-width: 290px;
@@ -74,9 +59,6 @@
     border-width: 4px; }
   .sidebar-box:last-child {
     margin: 0; }
-
-.range_val .form-group label {
-  margin: 0 0 20px; }
 
 .clear-filter {
   width: 100%;

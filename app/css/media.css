@@ -151,8 +151,6 @@
       max-width: 22px;
       min-width: 22px;
       margin: 0 0 0 5px; }
-  .list-marks {
-    margin: 40px 0 0; }
   .form-description {
     padding: 0;
     margin: 0 0 20px; }
@@ -491,8 +489,6 @@
         width: 61%; }
   .catalog-car {
     padding: 0 0 60px; }
-  .list-marks li {
-    width: 20%; }
   .advantages-box {
     padding: 19px 15px 19px 20px; }
     .advantages-box__icon {
@@ -818,6 +814,9 @@
       font-size: 22px;
       max-width: 263px; }
   .list-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%; }
     .list-social li {
       margin: 0 50px 0 0; }
@@ -878,11 +877,6 @@
     margin: 0 10px 0 0; }
   .p-80 {
     padding: 60px 0; }
-  .list-marks li {
-    margin: 0 0 8px;
-    width: 25%; }
-  .marks {
-    margin: 60px 0 52px; }
   .advantages h2 {
     margin: 0 0 30px; }
   .question {
@@ -916,11 +910,6 @@
     margin: 0 0 20px; }
     .box-text p:last-child {
       margin: 0; }
-  .contacts {
-    padding: 25px 0 313px; }
-  .contacts-box {
-    max-width: none;
-    padding: 24px 9px 24px 20px; }
   .h1 {
     font-size: 26px; }
   .links-prev {
