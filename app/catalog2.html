@@ -42,6 +42,50 @@
 <body>
 
 <div class="overlay-mobile"></div>
+
+<div class="mobile-sorting mobile-wrapper">
+  <div class="sidebar-head">
+    <h2>Сортировка</h2>
+    <div class="sidebar-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="sidebar-box">
+    <ul class="list-checkbox-sidebar ul-my">
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" checked name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">Цена: от дешевых к дорогим</span>
+        </label>
+      </li>
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">Цена: от дорогих к дешевым</span>
+        </label>
+      </li>
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">Сначала новые</span>
+        </label>
+      </li>
+      <li>
+        <label class="radio">
+          <input type="radio" class="inp-radio" name="radio">
+          <span class="radio-custom"></span>
+          <span class="radio-text">Сначала старые</span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="mobile-search mobile-wrapper">
   <div class="sidebar-head">
     <h2>Подобрать авто</h2>
@@ -156,12 +200,6 @@
 
           <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
 
-          <form method="post" class="form-search-mobile">
-            <label>
-              <input type="text" placeholder="Поиск..." name="search">
-            </label>
-            <button type="submit" class="btn btn-accent btn-sm">Найти</button>
-          </form>
 
           <a href="#" class="btn-search-mobile">
             <svg class="svg-icon">
@@ -214,9 +252,6 @@
       <div class="row">
         <div class="col-12 d-flex align-items-center flex-wrap">
           <nav class="nav-menu">
-            <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
-
-            <a href="#" class="nav-menu__close"></a>
 
             <ul class="menu ul-my">
               <li class="dropdown">
@@ -287,12 +322,83 @@
                 </div>
               </li>
 
-              <li><a href="car-loan.html">Автокредит</a></li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Автокредит</a>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-menu-list ul-my">
+                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места работы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места работы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места работы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
               <li><a href="auto-partners.html">Авто партнеров</a></li>
               <li><a href="buying.html" class="active">Выкуп авто</a></li>
-              <li><a href="index.html#about">О нас</a></li>
+              <li><a href="#about" class="go_to">О нас</a></li>
               <li><a href="news.html">Новости </a></li>
               <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+
+            <ul class="list-language ul-my">
+              <li><a href="#">LAT</a></li>
+              <li><a href="#" class="active">РУС</a></li>
+              <li><a href="#">ENG</a></li>
             </ul>
 
             <div class="schedule-box header-box">
@@ -305,18 +411,6 @@
               <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
             </div>
 
-
-            <div class="header-box header-contacts-box">
-              <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
-              <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Подать заявку
-                на лизинг</a>
-            </div>
-
-            <ul class="list-language ul-my">
-              <li><a href="#">LAT</a></li>
-              <li><a href="#" class="active">РУС</a></li>
-              <li><a href="#">ENG</a></li>
-            </ul>
           </nav>
         </div>
       </div>
@@ -324,276 +418,391 @@
   </div>
 </header>
 
-<section class="page page-product page-news">
+<section class="page page-catalog">
   <div class="container">
+
     <div class="row">
       <div class="col-12">
         <ul class="breadcrumbs ul-my">
           <li><a href="index.html"><img src="img/home-icon.svg" alt=""></a></li>
-          <li><span>Новости</span></li>
+          <li><span>Каталог</span></li>
         </ul>
       </div>
 
-      <div class="col-12">
-        <h1>Новости</h1>
-      </div>
     </div>
 
     <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/news1.jpg 526w"
-              data-src="medium"
-              class="lazyload"/></a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
+      <div class="col-12 col-lg-3">
+        <div class="sidebar">
+
+          <div class="sidebar-head">
+            <h2>Параметры</h2>
+            <div class="sidebar-close">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </div>
           </div>
+          <div class="sidebar-body">
+
+            <div class="sidebar-box">
+              <h4>Цена</h4>
+              <div class="range_val">
+                <div class="form-group">
+                  <label>
+                    <span class="range_val-text">от</span>
+                    <input type="text" name="dec" class="dec1">
+                  </label>
+                  <label>
+                    <span class="range_val-text">до</span>
+                    <input type="text" name="dec" class="dec2">
+                  </label>
+                </div>
+                <div class="slider-range slider-range1"></div>
+              </div>
+            </div>
+
+            <div class="sidebar-box">
+              <h4>Марка</h4>
+              <label>
+                <select name="select" class="select-my">
+                  <option value="Все">Все</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="sidebar-box">
+              <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem1" aria-expanded="true"
+                  aria-controls="collapseItem1">Модель</h4>
+              <div class="collapse show" id="collapseItem1">
+                <ul class="ul-my list-checkbox-sidebar">
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">Все модели</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">А8</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">А4</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">1 серии</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">2 серии</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">3 серии</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">5 серии</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox" name="checkbox" class="checkbox-inp">
+                      <span class="checkbox-custom"></span>
+                      <span class="checkbox-text">X1</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="sidebar-box">
+              <h4>Год выпуска</h4>
+              <div class="range_val">
+                <div class="form-group">
+                  <label>
+                    <span class="range_val-text">от</span>
+                    <input type="text" name="dec" class="dec3">
+                  </label>
+                  <label>
+                    <span class="range_val-text">до</span>
+                    <input type="text" name="dec" class="dec4">
+                  </label>
+                </div>
+                <div class="slider-range slider-range2"></div>
+              </div>
+            </div>
+
+            <div class="sidebar-box">
+              <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem2" aria-expanded="true"
+                  aria-controls="collapseItem2">Коробка передач</h4>
+              <div class="collapse" id="collapseItem2">
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <div class="sidebar-box">
+              <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem3" aria-expanded="true"
+                  aria-controls="collapseItem3">Комплектация</h4>
+              <div class="collapse" id="collapseItem3">
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-accent btn-sidebar-submit">подобрать авто</a>
+          </div>
+
         </div>
+
+        <a href="#" class="clear-filter">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#clear-filter"></use>
+          </svg>
+          Очистить фильтр</a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/news2.jpg 526w"
-              data-src="medium"
-              class="lazyload"/>></a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
+
+      <div class="col-12 col-lg-9">
+        <h1>Каталог автомобилей: </h1>
+
+        <div class="catalog-mobile-nav">
+          <div class="btn-catalog btn-filter">
+            <div class="btn-catalog__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#filter"></use>
+              </svg>
+            </div>
+            <div class="btn-catalog__text">Фильтровать</div>
+          </div>
+          <div class="btn-catalog btn-sorting">
+            <div class="btn-catalog__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#sorting"></use>
+              </svg>
+            </div>
+            <div class="btn-catalog__text">Сортировка</div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news3.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
+
+        <div class="catalog-top">
+          <div class="sorting-box">
+            <p>Сортировать:</p>
+            <label class="label-select">
+              <select name="select" class="select-sorting">
+                <option value="По возрастанию цены">По возрастанию цены</option>
+                <option value="Сначала новые">Сначала новые</option>
+                <option value="Сначала новые">Сначала новые</option>
+              </select>
+            </label>
           </div>
+
         </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news4.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news5.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news6.jpg 526w"
-                data-src="medium"
-                class="lazyload"/></a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news7.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news8.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news9.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news10.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news11.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news12.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news13.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news14.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img">
-            <img
-                alt=""
-                data-sizes="auto"
-                data-srcset="img/news15.jpg 526w"
-                data-src="medium"
-                class="lazyload"/>
-          </a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img"><img
-              alt=""
-              data-sizes="auto"
-              data-srcset="img/news16.jpg 526w"
-              data-src="medium"
-              class="lazyload"/></a>
-          <div class="news-card__body">
-            <a href="article.html" class="news-card__title">Новый кроссовер Volkswagen станет более доступной альтернативой Touareg</a>
-            <div class="date">17.02.2022</div>
-          </div>
-        </div>
+
+<div class="result-search">
+  <h3>По выбранным параметрам автомобили не найдены</h3>
+  <div class="box-text">
+    <p>Попройбуйте изменить параметры</p>
+  </div>
+</div>
       </div>
     </div>
 
   </div>
 </section>
 
+
+<section class="seo-section m-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-30">
+        <h2>SEO текст</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="box-text">
+          <p>Мы выстроили систему своей работы по принципу непрерывного процесса, ориентированного на качество.
+            Безусловно, как любую известную компанию, нас тоже подстерегали ошибки, неудачи и провалы. Все эти проблемы,
+            стали для нас бесценным опытом.
+            Безусловно, как любую известную компанию, нас тоже подстерегали ошибки, неудачи и провалы. Все эти проблемы,
+            стали для нас бесценным опытом. По прошествии более 10 лет, мы выстроили оптимальные услуги, условия и
+            инструменты работы. Главное, что каждый наш клиент находит то, что ему нужно. Выбирает те правила, которые,
+            он хочет. Присоединяйтесь! Меняйте правила, забирайте выгоды!</p>
+
+          <p>Безусловно, как любую известную компанию, нас тоже подстерегали ошибки, неудачи и провалы. Все эти
+            проблемы,
+            стали для нас бесценным опытом. По прошествии более 10 лет, мы выстроили оптимальные услуги, условия и
+            инструменты работы. Главное, что каждый наш клиент находит то, что ему нужно. Выбирает те правила, которые,
+            он хочет. Присоединяйтесь! Меняйте правила, забирайте выгоды!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="brands-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="brands-slider">
+          <div class="slide">
+            <a href="brand-page.html" class="brand-item">
+          <span class="brand-item__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/brand2.png 1280w"
+              data-src="medium"
+              class="lazyload"/></span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="brand-page.html" class="brand-item">
+          <span class="brand-item__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/brand1.png 1836w"
+              data-src="medium"
+              class="lazyload"/></span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="brand-page.html" class="brand-item">
+          <span class="brand-item__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/brand3.png 3139w"
+              data-src="medium"
+              class="lazyload"/></span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="brand-page.html" class="brand-item">
+          <span class="brand-item__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/brand4.png 960w"
+              data-src="medium"
+              class="lazyload"/></span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="brand-page.html" class="brand-item">
+           <span class="brand-item__img"><img
+               alt=""
+               data-sizes="auto"
+               data-srcset="img/brand5.png 4096w"
+               data-src="medium"
+               class="lazyload"/></span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="brand-page.html" class="brand-item">
+          <span class="brand-item__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/brand2.png 1280w"
+              data-src="medium"
+              class="lazyload"/></span>
+            </a>
+          </div>
+          <div class="slide">
+            <a href="brand-page.html" class="brand-item">
+          <span class="brand-item__img"><img
+              alt=""
+              data-sizes="auto"
+              data-srcset="img/brand1.png 1836w"
+              data-src="medium"
+              class="lazyload"/></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="popular-models">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-30">
+        <h2>Другие популярные модели от "BMW"</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="popular-models-slider">
+          <div class="slide">
+            <div class="popular-models-item">116</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">118</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">216</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">316</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">318</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">320</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">325</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">330</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">520</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">525</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">530</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">116</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">118</div>
+          </div>
+          <div class="slide">
+            <div class="popular-models-item">216</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="callback bg-blue">
   <div class="container">
@@ -725,7 +934,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Оставьте заявку</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
       </div>
       <div class="modal-body">
         <div class="box-text">
@@ -763,7 +976,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal-title">Заявка отправлена!</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
       </div>
       <div class="modal-body">
         <div class="box-text">

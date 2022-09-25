@@ -42,11 +42,15 @@ $(document).ready(function () {
             "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
     });
 
-    // var input2 = document.querySelector(".phone-input2");
-    // window.intlTelInput(input2, {
-    //     separateDialCode: true,
-    //     defaultCountry: 'auto'
-    // });
+    var input2 = document.querySelector(".phone-input2");
+    window.intlTelInput(input2, {
+        separateDialCode: true,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
 
     // var input3 = document.querySelector(".phone-input3");
     // window.intlTelInput(input3, {
@@ -99,6 +103,78 @@ $(".dec1").val($(".slider-range1").slider("values", 0) + ' ' + '€');
 $(".dec2").val($(".slider-range1").slider("values", 1) + ' ' + '€');
 
 
+$('.slider-range2').slider({
+    range: true,
+    min: 1930,
+    max: 2022,
+    values: [1970, 2015],
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec3").val(ui.values[0]);
+        //Поле максимального значения
+        $(".dec4").val(ui.values[1]);
+    }
+});
+$(".dec3").val($(".slider-range2").slider("values", 0));
+$(".dec4").val($(".slider-range2").slider("values", 1));
+
+$('.slider-range3').slider({
+    range: true,
+    min: 1930,
+    max: 2022,
+    values: [1970, 2015],
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec5").val(ui.values[0]);
+        //Поле максимального значения
+        $(".dec6").val(ui.values[1]);
+    }
+});
+$(".dec5").val($(".slider-range3").slider("values", 0));
+$(".dec6").val($(".slider-range3").slider("values", 1));
+
+
+$('.slider-range4').slider({
+    range: true,
+    min: 0,
+    max: 10000,
+    values: [1000, 7895],
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec7").val(ui.values[0] + ' ' + '€');
+        //Поле максимального значения
+        $(".dec8").val(ui.values[1] + ' ' + '€');
+    }
+});
+
+$(".dec7").val($(".slider-range4").slider("values", 0) + ' ' + '€');
+$(".dec8").val($(".slider-range4").slider("values", 1) + ' ' + '€');
+
+// $('.slider-range5').slider({
+//     range: "min",
+//     min: 0,
+//     max: 112,
+//     value: 64,
+//     classes: {
+//         "ui-slider-handle": "ui-corner-all"
+//     },
+//     slide: function (event, ui) {
+//         //Поле минимального значения
+//         $(".dec4").val(ui.value + ' ' + 'мес.');
+//     }
+// });
+// $(".dec4").val($(".slider-range5").slider("value") + ' ' + 'мес.');
+
+
 $('.interested-slider').slick({
     slidesToShow: 3,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
@@ -143,6 +219,71 @@ $('.brands-slider').slick({
     ]
 });
 
+$('.popular-models-slider').slick({
+    slidesToShow: 11,
+    slidesToScroll: 4,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 9,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 7,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
+});
+
+$('.sidebar-close, .overlay-mobile').on('click', function () {
+    $('.sidebar').fadeOut();
+    $('.mobile-wrapper').fadeOut();
+    $('.overlay-mobile').fadeOut();
+});
+
+$('.btn-filter').on('click', function () {
+    $('.overlay-mobile').fadeIn();
+    $('.sidebar').fadeIn();
+});
+
+$('.btn-sorting').on('click', function () {
+    $('.overlay-mobile').fadeIn();
+    $('.mobile-sorting').fadeIn();
+});
+
+$('.btn-search').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-mobile').fadeIn();
+    $('.mobile-search').fadeIn();
+});
+
+
+
 
 
 
@@ -176,35 +317,7 @@ $('.brands-slider').slick({
 
 
 
-$('.slider-range4').slider({
-    range: "min",
-    min: 0,
-    max: 50000,
-    value: 12950,
-    classes: {
-        "ui-slider-handle": "ui-corner-all"
-    },
-    slide: function (event, ui) {
-        //Поле минимального значения
-        $(".dec3").val('€' + ' ' + ui.value);
-    }
-});
-$(".dec3").val('€' + ' ' + $(".slider-range4").slider("value"));
 
-$('.slider-range5').slider({
-    range: "min",
-    min: 0,
-    max: 112,
-    value: 64,
-    classes: {
-        "ui-slider-handle": "ui-corner-all"
-    },
-    slide: function (event, ui) {
-        //Поле минимального значения
-        $(".dec4").val(ui.value + ' ' + 'мес.');
-    }
-});
-$(".dec4").val($(".slider-range5").slider("value") + ' ' + 'мес.');
 
 
 
@@ -286,22 +399,22 @@ $(window).on('load resize', function() {
 // slick active
 
 //progressbar
-function setProgress(index) {
-    const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
-
-    $progressBar
-        .css('width', calc + '%')
-        .attr('aria-valuenow', calc);
-
-}
-
-const $slider = $('.category-cars-slider');
-const $progressBar = $('.progress-bg');
-
-$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    setProgress(nextSlide);
-
-});
+// function setProgress(index) {
+//     const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+//
+//     $progressBar
+//         .css('width', calc + '%')
+//         .attr('aria-valuenow', calc);
+//
+// }
+//
+// const $slider = $('.category-cars-slider');
+// const $progressBar = $('.progress-bg');
+//
+// $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+//     setProgress(nextSlide);
+//
+// });
 
 
 
@@ -319,18 +432,6 @@ $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 
 
 
-$('.sidebar-close').on('click', function () {
-    $('.sidebar').fadeOut();
-    $('.mobile-sorting').fadeOut();
-});
-
-$('.btn-filter').on('click', function () {
-    $('.sidebar').fadeToggle();
-});
-
-$('.btn-sorting').on('click', function () {
-    $('.mobile-sorting').fadeToggle();
-});
 
 
 

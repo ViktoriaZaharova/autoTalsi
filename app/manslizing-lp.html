@@ -1044,6 +1044,62 @@
   </div>
 </footer>
 
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Оставьте заявку</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Мы свяжемся с вами в ближайшее время</p>
+        </div>
+        <form class="form-modal">
+          <label>
+            <input type="text" placeholder="Имя*" name="name">
+          </label>
+          <label><input type="text" placeholder="Телефон" class="phone-input phone-input2" name="phone"></label>
+
+          <button type="submit" class="btn btn-accent"><span class="btn-text">подобрать авто</span></button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я согласен с <a href="#" class="d-inline color-white text-decoration">политикой безопасности</a> и <a
+                href="#"
+                class="d-inline text-decoration color-white">правилами использования персональных даных</a></span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я хочу получать маркетинговые предложения</span>
+          </label>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Заявка отправлена!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Благодарим вас! Наш специалист свяжется с Вами по телефону в ближайшее время для уточнения деталей.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

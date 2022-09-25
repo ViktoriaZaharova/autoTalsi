@@ -82,6 +82,10 @@
     .slick-next
       right: 0
 
+  .sidebar .range_val input
+    padding: 5px 2px 5px 32px
+
+
 
 
 
@@ -98,8 +102,6 @@
   //    max-width: 300px
   //    top: auto
   //    bottom: -50px
-
-
 
 
   .home-manslizing .main-slider__item-img
@@ -449,6 +451,43 @@
     width: 100%
     margin: 0 auto
 
+  .clear-filter
+    display: none
+
+  .catalog-top
+    display: none
+
+  .sidebar
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 11
+    padding: 17px 15px
+    background: #fff
+    overflow-y: auto
+    height: 100%
+    max-width: 307px
+    border: none
+      radius: 0
+    &-head
+      padding: 0
+      margin: 0 0 13px
+      border: none
+    .btn-sidebar-submit
+      display: flex
+      margin: 20px 0 0
+
+  .sidebar-box
+    padding: 14px 0
+    &:last-child
+      border-bottom: 1px solid #DDE0DC
+
+  .btn-filter, .sidebar-close
+    display: flex
+
+  .catalog-mobile-nav
+    display: flex
 
 
 
@@ -500,29 +539,6 @@
     h3
       margin: 0 0 10px
 
-  .sidebar
-    display: none
-    position: fixed
-    left: 0
-    top: 0
-    z-index: 3
-    padding: 20px
-    background: #fff
-    overflow-y: auto
-    height: 100%
-    border: none
-      radius: 0
-
-
-  .btn-filter, .sidebar-close
-    display: flex
-
-  .catalog-mobile-nav
-    display: flex
-
-  .sorting-box
-    display: none
-
   .nav-tabs
     margin: 0 0 0 auto
     padding: 6.5px 0 6.5px 19px
@@ -540,9 +556,7 @@
     padding: 9px 0
 
 
-  .catalog-top
-    padding: 5px 15px
-    margin: 0 0 20px
+
 
   .product-gallery-item
     height: 400px
@@ -2009,6 +2023,48 @@
   .slick-dots
     margin: 20px auto 0
 
+  .modal-dialog
+    margin: 20px auto
+    max-width: 330px
+
+  .modal-content
+    padding: 40px 10px 30px
+
+  .modal-title
+    font-size: 22px
+
+  .modal-body
+    .box-text
+      font-size: 14px
+      margin: 0 auto
+
+  .form-modal
+    margin: 20px auto 0
+
+  #thanksModal
+    .modal-dialog
+      max-width: 330px
+    .box-text
+      max-width: 290px
+
+  .popular-models
+    margin: 40px 0 60px
+
+  .popular-models-slider
+    margin: 0
+    .slick-slide
+      padding: 0 7px
+
+  .result-search
+    margin: 40px 0 0
+    h3
+      font-size: 20px
+      margin: 0 0 12px
+
+
+
+
+
 
 
 
@@ -2129,15 +2185,15 @@
   .total-val-result
     font-size: 13px
 
-  .card-banner
-    min-height: 247px
-
-    h3
-      font-size: 16px
-
-    .btn
-      height: 40px
-      font-size: 14px
+  //.card-banner
+  //  min-height: 247px
+  //
+  //  h3
+  //    font-size: 16px
+  //
+  //  .btn
+  //    height: 40px
+  //    font-size: 14px
 
   .pagination
     font-size: 14px

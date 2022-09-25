@@ -4,18 +4,18 @@
   opacity: .2
 
 .modal-dialog
-  max-width: 600px
+  max-width: 425px
 
 .modal-content
-  border: 1px solid #DCE0E7
-    radius: 5px
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25)
-  padding: 70px 40px 50px
+  border: 1px solid #DDE0DC
+    radius: 30px
+  padding: 40px 50px 45px
+  background: #fff
 
 .modal-header
   padding: 0
   border: none
-  margin: 0 auto 15px
+  margin: 0 auto
   text-align: center
   flex-wrap: wrap
   .close
@@ -32,20 +32,37 @@
     position: absolute
     right: 20px
     top: 20px
+    @include d-flex
 
 .modal-title
   text-align: center
-  color: #2F5048
-  font-size: 39px
-  font-weight: 900
+  color: $black
+  font-size: 30px
+  font-weight: 500
   width: 100%
 
 .modal-body
   padding: 0
+  margin: 5px 0 0
   width: 100%
   .box-text
     text-align: center
-    margin: 0 auto 30px
-  .btn
-    max-width: 240px
     margin: 0 auto
+    max-width: 378px
+
+  .checkbox
+    color: #303030
+    font-size: 12px
+    &:last-child
+      margin: 0
+  button
+    margin: 10px auto 20px
+    max-width: none
+    width: 100%
+
+.form-modal
+  margin: 25px auto 0
+
+#thanksModal
+  .modal-dialog
+    max-width: 525px

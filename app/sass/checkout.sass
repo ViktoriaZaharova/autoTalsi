@@ -187,15 +187,15 @@
 
 .select-my
   appearance: none
-  border: 1px solid #B0B0B0
-    radius: 6px
-  height: 55px
+  border: 1px solid #DDE0DC
+    radius: 40px
+  height: 40px
   width: 100%
-  padding: 0 32px 0 20px
-  background: #fff url("../img/arrow-select.svg") no-repeat calc(100% - 20px) center
+  padding: 0 32px 0 15px
+  background: #F5F5F5 url("../img/arrow-select.svg") no-repeat calc(100% - 17px) center
     size: 12px
-  color: #848484
-  font-size: 16px
+  color: $black
+  font-size: 14px
   cursor: pointer
   transition: .3s ease
   &:hover
@@ -410,16 +410,16 @@
   width: 20px
   height: 20px
   min-width: 20px
-  margin: 0 8px 0 0
+  margin: 0 12px 0 0
   padding: 0
   position: relative
 
   &:before
     content: ''
     position: absolute
-    background: #fff
-    width: 6px
-    height: 6px
+    background: #3570F2
+    width: 11px
+    height: 11px
     border-radius: 50%
     left: 50%
     top: 50%
@@ -428,9 +428,6 @@
 
 .inp-radio:checked
   + .radio-custom
-    border-color: $accent
-    background: $accent
-
     &:before
       display: block
 

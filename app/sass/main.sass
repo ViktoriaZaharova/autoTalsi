@@ -586,7 +586,8 @@ h2
 
       &:hover
         color: $accent
-
+      img
+        max-width: 20px
     span
       display: flex
       align-items: center
@@ -605,23 +606,25 @@ h2
   align-items: center
   justify-content: center
   flex-wrap: wrap
-  margin: 10px auto 0
+  margin: 20px auto 0
 
   .page-item
-    margin: 0 5px 0 0
+    margin: 0 2px 0 0
     &:last-child
       margin: 0
   .page-link
     padding: 2px
-    width: 36px
-    height: 44px
-    border: 1px solid #E1E4E8
+    width: 30px
+    height: 36px
+    border: 1px solid #DCDDE0
       radius: 4px
     background: #fff
-    color: #2A2D28
+    color: #303030
+    font-size: 14px
     @include d-flex
     &:hover
-      background: #2F5048
+      background: #FED530
+      border-color: #FED530
       color: #fff
       outline: none
       box-shadow: none
@@ -630,10 +633,9 @@ h2
   .page-link-arrow
     letter-spacing: -0.2em
   .active
-
     .page-link
-      background: #2F5048
-      border: 1px solid #E1E4E8
+      background: #FED530
+      border: 1px solid #FED530
       color: #fff
 
 
@@ -1021,131 +1023,131 @@ h2
 //  -webkit-transform: rotate(135deg)
 //  transform: rotate(135deg)
 
-.mobile-wrapper
-  max-width: 210px
-  width: 100%
-  position: fixed
-  z-index: 4
-  height: calc(100% - 61px)
-  overflow-y: auto
-  background: #fff
-  bottom: 0
-  display: none
-
-  .menu
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -ms-flex-direction: column
-    flex-direction: column
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    text-align: center
-    margin: 34px 0 27px
-
-    li
-      margin: 0 0 20px
-
-      a
-        padding: 0
-        font-size: 14px
-
-        &:before
-          display: none
-
-      .active
-        color: #8FBA44
-
-  .phone-wrapper__body
-    margin: 27px 0 21px
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -ms-flex-direction: column
-    flex-direction: column
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-
-    a
-      width: -moz-fit-content
-      width: fit-content
-
-    .phone
-      font-size: 19px
-
-  .list-social
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    -webkit-box-orient: horizontal
-    -webkit-box-direction: normal
-    -ms-flex-direction: row
-    flex-direction: row
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
-    position: relative
-    right: 0
-    top: 0
-    left: 0
-    -webkit-transform: none
-    transform: none
-    width: 100%
-    margin: 32px 0 20px
-
-    li
-      margin: 0 10px 0 0
-
-      &:last-child
-        margin: 0
-
-      a
-        width: 28px
-        height: 28px
-        padding: 9px 5px
-
-  .contacts-item
-    margin: 0 auto 9px
-    font-size: 13px
-    justify-content: center
-    align-items: center
-    display: flex
-
-    span
-      font-size: 13px
-
-    &:last-child
-      margin: 0 auto 29px
-
-    .phone
-      font-size: 19px
-
-  .list-language
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
-
-    li
-      margin: 0 15px 0 0
-
-      &:last-child
-        margin: 0
-
-      a
-        font-size: 10px
-        padding: 17px 0 0
-
-        &:before
-          height: 3px
-
-      .active:before, &:hover:before
-        width: 60px
+//.mobile-wrapper
+//  max-width: 210px
+//  width: 100%
+//  position: fixed
+//  z-index: 4
+//  height: calc(100% - 61px)
+//  overflow-y: auto
+//  background: #fff
+//  bottom: 0
+//  display: none
+//
+//  .menu
+//    -webkit-box-orient: vertical
+//    -webkit-box-direction: normal
+//    -ms-flex-direction: column
+//    flex-direction: column
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    text-align: center
+//    margin: 34px 0 27px
+//
+//    li
+//      margin: 0 0 20px
+//
+//      a
+//        padding: 0
+//        font-size: 14px
+//
+//        &:before
+//          display: none
+//
+//      .active
+//        color: #8FBA44
+//
+//  .phone-wrapper__body
+//    margin: 27px 0 21px
+//    -webkit-box-orient: vertical
+//    -webkit-box-direction: normal
+//    -ms-flex-direction: column
+//    flex-direction: column
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//
+//    a
+//      width: -moz-fit-content
+//      width: fit-content
+//
+//    .phone
+//      font-size: 19px
+//
+//  .list-social
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    -webkit-box-orient: horizontal
+//    -webkit-box-direction: normal
+//    -ms-flex-direction: row
+//    flex-direction: row
+//    -webkit-box-pack: center
+//    -ms-flex-pack: center
+//    justify-content: center
+//    position: relative
+//    right: 0
+//    top: 0
+//    left: 0
+//    -webkit-transform: none
+//    transform: none
+//    width: 100%
+//    margin: 32px 0 20px
+//
+//    li
+//      margin: 0 10px 0 0
+//
+//      &:last-child
+//        margin: 0
+//
+//      a
+//        width: 28px
+//        height: 28px
+//        padding: 9px 5px
+//
+//  .contacts-item
+//    margin: 0 auto 9px
+//    font-size: 13px
+//    justify-content: center
+//    align-items: center
+//    display: flex
+//
+//    span
+//      font-size: 13px
+//
+//    &:last-child
+//      margin: 0 auto 29px
+//
+//    .phone
+//      font-size: 19px
+//
+//  .list-language
+//    -webkit-box-pack: center
+//    -ms-flex-pack: center
+//    justify-content: center
+//
+//    li
+//      margin: 0 15px 0 0
+//
+//      &:last-child
+//        margin: 0
+//
+//      a
+//        font-size: 10px
+//        padding: 17px 0 0
+//
+//        &:before
+//          height: 3px
+//
+//      .active:before, &:hover:before
+//        width: 60px
 
 
 //.mobile-filter
@@ -2742,19 +2744,7 @@ h2
   height: 15px
   margin: 0 11px 0 0
 
-.sidebar-close
-  width: 20px
-  height: 20px
-  fill: #2AB051
-  margin: 0 0 20px auto
-  cursor: pointer
-  display: none
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
+
 
 //.mobile-vehicle-chat-sms
 //  position: fixed

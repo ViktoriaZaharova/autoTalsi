@@ -42,6 +42,106 @@
 <body>
 
 <div class="overlay-mobile"></div>
+<div class="mobile-search mobile-wrapper">
+  <div class="sidebar-head">
+    <h2>Подобрать авто</h2>
+    <div class="sidebar-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="sidebar-body">
+    <form method="post" class="form-search">
+      <label>
+        <input type="text" placeholder="Поиск по сайту" name="search">
+      </label>
+    </form>
+
+    <div class="sidebar-box">
+      <h4>Марка</h4>
+      <label>
+        <select name="select" class="select-my">
+          <option value="Все">Все</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Модель</h4>
+      <label>
+        <select name="select" class="select-my">
+          <option value="Все">Все</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Год выпуска</h4>
+      <div class="range_val">
+        <div class="form-group">
+          <label>
+            <span class="range_val-text">от</span>
+            <input type="text" name="dec" class="dec5">
+          </label>
+          <label>
+            <span class="range_val-text">до</span>
+            <input type="text" name="dec" class="dec6">
+          </label>
+        </div>
+        <div class="slider-range slider-range3"></div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
+          aria-controls="collapseItem4">Коробка передач</h4>
+      <div class="collapse" id="collapseItem4">
+        <label>
+          <select name="select" class="select-my">
+            <option value="Автомат">Автомат</option>
+            <option value="Механика">Механика</option>
+            <option value="Робот">Робот</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
+          aria-controls="collapseItem5">Тип кузова</h4>
+      <div class="collapse" id="collapseItem5">
+        <label>
+          <select name="select" class="select-my">
+            <option value="Седан">Седан</option>
+            <option value="Универсал">Универсал</option>
+            <option value="Купе">Купе</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>Цена</h4>
+      <div class="range_val">
+        <div class="form-group">
+          <label>
+            <span class="range_val-text">от</span>
+            <input type="text" name="dec" class="dec7">
+          </label>
+          <label>
+            <span class="range_val-text">до</span>
+            <input type="text" name="dec" class="dec8">
+          </label>
+        </div>
+        <div class="slider-range slider-range4"></div>
+      </div>
+    </div>
+
+    <a href="#" class="btn btn-accent btn-sidebar-submit">подобрать авто</a>
+  </div>
+</div>
 
 <header>
   <div class="header-top">
@@ -229,7 +329,7 @@
     <div class="row">
       <div class="col-12">
         <ul class="breadcrumbs ul-my">
-          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html"><img src="img/home-icon.svg" alt=""></a></li>
           <li><span>404</span></li>
         </ul>
       </div>
@@ -373,6 +473,62 @@
     </div>
   </div>
 </footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Оставьте заявку</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Мы свяжемся с вами в ближайшее время</p>
+        </div>
+        <form class="form-modal">
+          <label>
+            <input type="text" placeholder="Имя*" name="name">
+          </label>
+          <label><input type="text" placeholder="Телефон" class="phone-input phone-input2" name="phone"></label>
+
+          <button type="submit" class="btn btn-accent"><span class="btn-text">подобрать авто</span></button>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я согласен с <a href="#" class="d-inline color-white text-decoration">политикой безопасности</a> и <a
+                href="#"
+                class="d-inline text-decoration color-white">правилами использования персональных даных</a></span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я хочу получать маркетинговые предложения</span>
+          </label>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Заявка отправлена!</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Благодарим вас! Наш специалист свяжется с Вами по телефону в ближайшее время для уточнения деталей.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

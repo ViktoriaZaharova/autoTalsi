@@ -206,15 +206,15 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 1px solid #B0B0B0;
-    border-radius: 6px;
-  height: 55px;
+  border: 1px solid #DDE0DC;
+    border-radius: 40px;
+  height: 40px;
   width: 100%;
-  padding: 0 32px 0 20px;
-  background: #fff url("../img/arrow-select.svg") no-repeat calc(100% - 20px) center;
+  padding: 0 32px 0 15px;
+  background: #F5F5F5 url("../img/arrow-select.svg") no-repeat calc(100% - 17px) center;
     background-size: 12px;
-  color: #848484;
-  font-size: 16px;
+  color: #303030;
+  font-size: 14px;
   cursor: pointer;
   -webkit-transition: .3s ease;
   transition: .3s ease; }
@@ -431,15 +431,15 @@
   width: 20px;
   height: 20px;
   min-width: 20px;
-  margin: 0 8px 0 0;
+  margin: 0 12px 0 0;
   padding: 0;
   position: relative; }
   .radio-custom:before {
     content: '';
     position: absolute;
-    background: #fff;
-    width: 6px;
-    height: 6px;
+    background: #3570F2;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
     left: 50%;
     top: 50%;
@@ -447,11 +447,8 @@
             transform: translate(-50%, -50%);
     display: none; }
 
-.inp-radio:checked + .radio-custom {
-  border-color: #3570F2;
-  background: #3570F2; }
-  .inp-radio:checked + .radio-custom:before {
-    display: block; }
+.inp-radio:checked + .radio-custom:before {
+  display: block; }
 
 .radio-text {
   display: -webkit-box;
