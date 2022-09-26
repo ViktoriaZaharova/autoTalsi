@@ -99,13 +99,15 @@
       <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem4" aria-expanded="true"
           aria-controls="collapseItem4">Коробка передач</h4>
       <div class="collapse" id="collapseItem4">
-        <label>
-          <select name="select" class="select-my">
-            <option value="Автомат">Автомат</option>
-            <option value="Механика">Механика</option>
-            <option value="Робот">Робот</option>
-          </select>
-        </label>
+        <div class="sidebar-box__body">
+          <label>
+            <select name="select" class="select-my">
+              <option value="Автомат">Автомат</option>
+              <option value="Механика">Механика</option>
+              <option value="Робот">Робот</option>
+            </select>
+          </label>
+        </div>
       </div>
     </div>
 
@@ -113,13 +115,15 @@
       <h4 data-toggle="collapse" class="sidebar-box-collapse" data-target="#collapseItem5" aria-expanded="true"
           aria-controls="collapseItem5">Тип кузова</h4>
       <div class="collapse" id="collapseItem5">
-        <label>
-          <select name="select" class="select-my">
-            <option value="Седан">Седан</option>
-            <option value="Универсал">Универсал</option>
-            <option value="Купе">Купе</option>
-          </select>
-        </label>
+        <div class="sidebar-box__body">
+          <label>
+            <select name="select" class="select-my">
+              <option value="Седан">Седан</option>
+              <option value="Универсал">Универсал</option>
+              <option value="Купе">Купе</option>
+            </select>
+          </label>
+        </div>
       </div>
     </div>
 
@@ -157,12 +161,12 @@
 
           <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
 
-          <form method="post" class="form-search-mobile">
-            <label>
-              <input type="text" placeholder="Поиск..." name="search">
-            </label>
-            <button type="submit" class="btn btn-accent btn-sm">Найти</button>
-          </form>
+          <!--          <form method="post" class="form-search-mobile">-->
+          <!--            <label>-->
+          <!--              <input type="text" placeholder="Поиск..." name="search">-->
+          <!--            </label>-->
+          <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
+          <!--          </form>-->
 
           <a href="#" class="btn-search-mobile">
             <svg class="svg-icon">
@@ -215,9 +219,6 @@
       <div class="row">
         <div class="col-12 d-flex align-items-center flex-wrap">
           <nav class="nav-menu">
-            <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
-
-            <a href="#" class="nav-menu__close"></a>
 
             <ul class="menu ul-my">
               <li class="dropdown">
@@ -288,12 +289,83 @@
                 </div>
               </li>
 
-              <li><a href="car-loan.html">Автокредит</a></li>
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Автокредит</a>
+                <div class="dropdown-menu">
+                  <ul class="dropdown-menu-list ul-my">
+                    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места работы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места работы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без первого
+                      взноса</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лизинг без
+                      официального места работы</a>
+                      <div class="dropdown-menu">
+                        <ul class="dropdown-menu-list ul-my">
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                          <li><a href="#">Лизинг без первого взноса</a></li>
+                          <li><a href="#">Лизинг без официального места работы</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
               <li><a href="auto-partners.html">Авто партнеров</a></li>
               <li><a href="buying.html" class="active">Выкуп авто</a></li>
-              <li><a href="index.html#about">О нас</a></li>
+              <li><a href="#about" class="go_to">О нас</a></li>
               <li><a href="news.html">Новости </a></li>
               <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+
+            <ul class="list-language ul-my">
+              <li><a href="#">LAT</a></li>
+              <li><a href="#" class="active">РУС</a></li>
+              <li><a href="#">ENG</a></li>
             </ul>
 
             <div class="schedule-box header-box">
@@ -306,18 +378,6 @@
               <a href="mailto:info@manslizings.lv">info@manslizings.lv</a>
             </div>
 
-
-            <div class="header-box header-contacts-box">
-              <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
-              <a href="#" class="link-modal color-accent" data-toggle="modal" data-target="#callbackModal">Подать заявку
-                на лизинг</a>
-            </div>
-
-            <ul class="list-language ul-my">
-              <li><a href="#">LAT</a></li>
-              <li><a href="#" class="active">РУС</a></li>
-              <li><a href="#">ENG</a></li>
-            </ul>
           </nav>
         </div>
       </div>

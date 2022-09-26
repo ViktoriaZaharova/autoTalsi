@@ -34,6 +34,11 @@
       right: 0; }
   .sidebar .range_val input {
     padding: 5px 2px 5px 32px; }
+  .product-information-contacts {
+    padding: 10px 25px;
+    font-size: 14px; }
+  .quick-contacts-item-phone .decor {
+    right: -30px; }
   .home-manslizing .main-slider__item-img {
     max-width: 500px;
     width: 100%; } }
@@ -283,6 +288,67 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .product-information-contacts-item {
+    margin: 0 0 10px; }
+    .product-information-contacts-item:last-child {
+      margin: 0; }
+  .price-product .new-price {
+    font-size: 30px; }
+  .price-product .old-price {
+    font-size: 20px;
+    margin: 0 0 7px 20px; }
+  .checked-company {
+    padding: 6px 8px;
+    font-size: 12px; }
+  .page-product-box {
+    margin: 0 0 10px; }
+    .page-product-box:last-child {
+      margin: 0; }
+    .page-product-box__head {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 20px 20px 10px; }
+      .page-product-box__head h3 {
+        width: auto; }
+      .page-product-box__head.collapsed:after {
+        content: '';
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: auto;
+        width: 12px;
+        height: 6px;
+        background: url("../img/arrow-bottom.svg") no-repeat center;
+          background-size: 100%;
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+      .page-product-box__head.collapsed:after {
+        -webkit-transform: rotate(0);
+                transform: rotate(0); }
+    .page-product-box__body {
+      padding: 20px; }
+      .page-product-box__body .collapse {
+        margin: 0 0 20px; }
+    .page-product-box .page-contacts-box {
+      margin: 0 0 15px; }
+      .page-product-box .page-contacts-box:last-child {
+        margin: 0 0 15px; }
+  .quick-contacts-item {
+    margin: 0 0 10px;
+    height: 112px;
+    padding: 10px; }
+    .quick-contacts-item .decor {
+      display: none; }
   .main-form {
     max-width: 320px;
     padding: 40px 25px; }
@@ -353,26 +419,6 @@
   .category-cars-box {
     width: 270px;
     height: 300px; }
-  .progress {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 214px;
-    height: 2px;
-    position: relative;
-    background: #DBDBDB; }
-  .progress-bg {
-    height: 4px;
-    background: #8FBA44;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    -webkit-transition: .3s ease;
-    transition: .3s ease; }
-  .category-cars-box {
-    -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 64, 122, 0.12));
-            filter: drop-shadow(0px 4px 20px rgba(0, 64, 122, 0.12)); }
   .seo-section .box-text p {
     margin: 0 0 20px; }
     .seo-section .box-text p:last-child {
@@ -382,70 +428,7 @@
         flex-wrap: wrap; }
   .dropdown-box {
     margin: 0 0 30px;
-    width: 100%; }
-  .page-product-box__head {
-    padding: 0 0 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .page-product-box__head h3 {
-      width: auto; }
-    .page-product-box__head:after {
-      content: '';
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      margin-left: auto;
-      width: 12px;
-      height: 6px;
-      background: url("../img/arrow-bottom.svg") no-repeat center;
-        background-size: 100%;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
-    .page-product-box__head.collapsed:after {
-      -webkit-transform: rotate(0);
-              transform: rotate(0); }
-  .page-product-box__body {
-    padding: 15px 0 0; }
-    .page-product-box__body .collapse {
-      margin: 0 0 20px; }
-  .page-product-box__subtitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .page-product-box__subtitle:after {
-      content: '';
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      margin-left: auto;
-      width: 12px;
-      height: 6px;
-      background: url("../img/arrow-bottom.svg") no-repeat center;
-        background-size: 100%;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
-    .page-product-box__subtitle.collapsed:after {
-      -webkit-transform: rotate(0);
-              transform: rotate(0); } }
+    width: 100%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 870px) {
@@ -598,151 +581,58 @@
     display: none; }
   .about-company__image {
     margin: 0 auto 30px; }
-  .schedule-box__text {
-    max-width: none; }
-  .h1 {
-    font-size: 22px; }
+  .product-information-contacts {
+    background: transparent;
+    border: none;
+      border-radius: 0;
+    padding: 0;
+    margin: 0 0 5px; }
   .slick-arrow {
-    width: 30px;
-    height: 56px; }
-  .page-product-box {
-    margin: 0 0 30px; }
-    .page-product-box__head {
-      padding: 0 0 15px; }
-    .page-product-box__body {
-      padding: 15px 0 0;
-      font-size: 14px; }
-      .page-product-box__body .box-text {
-        font-size: 14px; }
-    .page-product-box h4 {
-      font-size: 16px; }
-    .page-product-box ul {
-      font-size: 14px;
-      margin: 0 0 20px; }
-      .page-product-box ul:last-child {
-        margin: 0 0 20px; }
-    .page-product-box .mail {
-      margin: 0 0 20px; }
-    .page-product-box .footer-box .list-maps {
-      margin: 0; }
-      .page-product-box .footer-box .list-maps li {
-        margin: 0; }
-    .page-product-box .waze-link {
-      margin: 0 0 20px; }
-  .product-gallery-preview {
-    padding: 0 35px; }
-    .product-gallery-preview .product-gallery-item {
-      height: 56px;
-      max-width: 84px; }
+    width: 25px;
+    height: 40px; }
+  .product-gallery .slick-arrow {
+    width: 25px;
+    height: 40px;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
+      border-radius: 5px; }
+    .product-gallery .slick-arrow svg {
+      width: 8.5px;
+      height: 17px; }
+  .product-gallery .slick-prev {
+    left: 11px; }
+  .product-gallery .slick-next {
+    right: 11px; }
+  .product-gallery-item {
+    border-radius: 10px; }
+  .product-information-contacts-item:last-child {
+    margin: 0 0 10px; }
+  .page-product h1 {
+    margin: 0 0 15px; }
+  .mb-30 {
+    margin: 0 0 15px; }
+  .product-gallery-preview .product-gallery-item {
+    height: 60px;
+    max-width: 90px; }
   .btn-play {
     font-size: 8px; }
     .btn-play__icon {
       width: 24px;
-      height: 24px;
-      margin: 0 auto 2px; }
-  .conditions {
-    width: calc(100% + 30px);
-    margin: 20px -15px 45px;
-    border-radius: 0; }
-    .conditions h3 {
-      margin: 0 auto;
-      font-size: 22px; }
-    .conditions .box-text {
-      margin: 10px auto 20px; }
-  .product-information {
-    padding: 30px 20px; }
-  .conditions-wrapper {
-    border-radius: 0;
-    padding: 60px 15px 150px; }
-  .benefit {
-    padding: 60px 0 20px; }
-    .benefit h2 {
-      text-align: left;
-      margin: 0 auto 10px; }
-    .benefit .logo-company {
-      max-width: 120px; }
-  .priority-box {
-    padding: 13px 5px;
-    max-width: 170px; }
-  .benefit-table-row {
-    padding: 50px 0 0; }
-  .benefit-table-list {
-    font-size: 14px; }
-    .benefit-table-list > li:nth-child(3) {
-      min-height: 60px; }
-  .benefit-table-col h3 {
-    font-size: 14px; }
-  .benefit-table-col__head {
-    min-height: 26px; }
-  .no-priority-box {
-    max-width: 160px;
-    padding: 13px 5px; }
-  .list-star li {
-    width: 18px;
-    height: 18px;
-    margin: 0 4px 0 0; }
-    .list-star li:last-child {
-      margin: 0; }
-  .form-success .form-group {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .form-success .form-group label {
-      width: 100%;
-      max-width: none;
-      margin: 0 0 10px; }
-    .form-success .form-group .radio-mail {
-      max-width: none; }
-  .radio-text__content {
-    margin: 0 0 0 8px; }
-  .btn-accent {
-    font-size: 15px; }
-    .btn-accent .btn-arrow {
-      margin: 0 0 0 20px; }
-  .input-text {
-    font-size: 14px; }
-  .label-wrapper {
-    padding: 0 15px; }
-  .btn-accent:after {
-    width: 77px; }
-  .mb-30 {
-    margin: 0 0 15px; }
-  .btn-all {
-    margin: 5px auto 0; } }
+      height: 24px; }
+  .conditions h3 {
+    margin: 0 auto 20PX;
+    font-size: 20px; }
+  .characteristics-wrap {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; }
+  .page-product-box__item {
+    margin: 0 0 20px; }
+  .page-product-box h4 {
+    font-size: 18px; }
+  .page-product-box__head h3 {
+    font-size: 22px; } }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 650px) {
-  .list-characteristics-product li {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    .list-characteristics-product li:before {
-      bottom: auto;
-      top: 19px; }
-    .list-characteristics-product li p {
-      max-width: 153px; }
-    .list-characteristics-product li span {
-      min-width: 150px;
-      max-width: 150px;
-      white-space: normal; }
-  .product-characteristics {
-    padding: 30px 20px; }
-  .recommended-section {
-    padding: 60px 0 50px; }
-    .recommended-section h2 {
-      margin: 0 0 30px; }
-  .button-group {
-    width: 100%;
-    margin: 10px 0 0;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .button-group .btn {
-      margin: 0 0 5px 0; }
-      .button-group .btn:last-child {
-        margin: 0 0 5px; }
-  .benefit-table-list > li {
-    padding: 6px 10px; } }
-
 @media only screen and (max-width: 576px) {
   .footer-top__content {
     padding: 40px 0 30px; }
@@ -1027,6 +917,78 @@
     .result-search h3 {
       font-size: 20px;
       margin: 0 0 12px; }
+  .product-information-contacts-item {
+    position: relative;
+    font-size: 16px; }
+    .product-information-contacts-item__icon {
+      display: none; }
+    .product-information-contacts-item .country-flag {
+      width: 17px;
+      height: 12px;
+      min-width: 17px;
+      margin: 0;
+      border-radius: 3px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      right: 0;
+      bottom: 2px; }
+    .product-information-contacts-item span {
+      display: block;
+      padding: 0 24px 0 0;
+      margin: 0; }
+  .calculate-box {
+    padding: 25px 20px; }
+    .calculate-box h3 {
+      font-size: 20px;
+      margin: 0 0 15px; }
+    .calculate-box .range_val label {
+      margin: 0 0 9px; }
+  .p-80 {
+    padding: 60px 0; }
+  .pagination {
+    font-size: 14px; }
+    .pagination .page-item {
+      margin: 0 2px 0 0; }
+    .pagination .page-link {
+      width: 30px;
+      height: 36px; }
+  .product-gallery-item {
+    height: 350px; }
+  .recommended-section {
+    margin: 60px 0 40px; }
+    .recommended-section .card-col {
+      padding: 0 5px; }
+    .recommended-section h2 {
+      margin: 0 0 20px; }
+  .product-characteristics {
+    margin: 10px 0; }
+  .characteristics-wrap {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .quick-contacts-item {
+    font-size: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 30px; }
+    .quick-contacts-item__text {
+      max-width: 176px;
+      display: inline-block; }
+      .quick-contacts-item__text span {
+        font-size: 20px;
+        display: block; }
+    .quick-contacts-item__icon {
+      margin: 0 0 0 auto;
+      width: 26px;
+      height: 18px;
+      min-width: 26px; }
+  .btn-red {
+    font-size: 20px;
+    height: 50px;
+    padding: 10px; }
   .img-mobile {
     display: block; }
   .main-form {
@@ -1051,59 +1013,16 @@
   .all-models-result {
     margin: 10px 0 0;
     text-align: left; }
-  .p-80 {
-    padding: 60px 0; }
-  .advantages h2 {
-    margin: 0 0 30px; }
-  .question {
-    padding: 60px 0 50px; }
-    .question .container:before {
-      -webkit-filter: blur(320px);
-              filter: blur(320px);
-      left: -100px;
-      top: 0;
-      width: 230px;
-      height: 230px;
-      -webkit-transform: none;
-              transform: none; }
-    .question h2 {
-      margin: 0 0 20px;
-      text-align: left; }
-  .question-box {
-    padding: 15px 0;
-    margin: 0 0 10px; }
-    .question-box:last-child {
-      margin: 0 0 10px; }
-    .question-box__head {
-      padding: 0 12px 0 14px; }
-    .question-box__body {
-      padding: 10px 0 16px 15px;
-      font-size: 14px;
-      color: #6F766B; }
   .mb-30 {
     margin-bottom: 20px; }
   .box-text p {
     margin: 0 0 20px; }
     .box-text p:last-child {
       margin: 0; }
-  .h1 {
-    font-size: 26px; }
   .links-prev {
     margin: 20px auto 0; }
-  .label-file-result__delete, .fileup-file .fileup-controls .fileup-remove {
-    width: 13px;
-    height: 13px; }
   .total-val-result {
     font-size: 13px; }
-  .pagination {
-    font-size: 14px; }
-    .pagination .page-item {
-      margin: 0 2px 0 0; }
-    .pagination .page-link {
-      width: 30px;
-      height: 36px; }
-  .product-gallery-item {
-    height: 350px; }
   .home-manslizing h1 {
     max-width: 304px; }
   .home-manslizing .main-content ul {
@@ -1189,14 +1108,7 @@
       margin: 0 20px 0 0; }
       .list-messengers li a {
         width: 44px;
-        height: 44px; }
-  .inp-group-item {
-    height: 55px;
-    padding: 6px 9px;
-    font-size: 10px; }
-    .inp-group-item input {
-      font-size: 16px;
-      margin: 2px 0 0; } }
+        height: 44px; } }
 
 @media (max-width: 480px) {
   .card-footer {
@@ -1223,7 +1135,25 @@
   .card-body {
     padding: 10px; }
   .card-title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .payment-month__val {
+    width: 104px;
+    height: 40px;
+    min-width: 104px;
+    margin: 0 10px 0 auto;
+    font-size: 20px; }
+  .product-gallery-preview {
+    display: none; }
+  .product-gallery {
+    margin: 0 0 15px; }
+  .checked-company {
+    font-size: 10px;
+    top: 6px;
+    left: 6px; }
+    .checked-company img {
+      height: 13px; }
+  .product-gallery-item {
+    height: 228px; } }
 
 @media (max-width: 420px) {
   .brand-item {
@@ -1247,43 +1177,7 @@
   .catalog-car-row {
     margin: 0 -5px; }
     .catalog-car-row .card-col {
-      padding: 0 5px; }
-  .list-characteristics {
-    font-size: 10px; }
-    .list-characteristics li {
-      height: 19px; }
-  .label-list {
-    font-size: 10px;
-    padding: 5px; }
-    .label-list li {
-      height: 20px;
-      padding: 1px 6px; }
-  .list-tags {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .list-tags li {
-      margin: 0; }
-      .list-tags li:first-child {
-        width: 58%; }
-      .list-tags li:last-child {
-        width: 40%; }
-      .list-tags li a {
-        width: 100%;
-        padding: 9.5px 15px; }
-  .all-models-result {
-    width: 100%; }
-  .list-characteristics-product li p {
-    max-width: 135px; }
-  .product-gallery-item {
-    height: 218px; } }
-
-@media (max-width: 380px) {
-  .benefit-table-list {
-    font-size: 11px;
-    line-height: normal; }
-  .benefit-table-col h3 {
-    font-size: 10px; } }
+      padding: 0 5px; } }
 
 @media (max-width: 350px) {
   .card .old-price {
@@ -1292,11 +1186,5 @@
     font-size: 16px; }
   .main-form h3 {
     font-size: 17px; }
-  .page-product-box .list-characteristics-product {
-    font-size: 12px; }
-  .list-characteristics-product li:before {
-    top: 15px; }
-  .product-gallery-preview .slide {
-    padding: 0 2px; }
   .home-manslizing h1 {
     max-width: 240px; } }

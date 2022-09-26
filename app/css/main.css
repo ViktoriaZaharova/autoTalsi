@@ -200,6 +200,17 @@ strong {
     .btn-accent:hover .btn-arrow {
       fill: #fff; }
 
+.btn-red {
+  width: 100%;
+  color: #fff;
+  background: #E14141;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600; }
+  .btn-red:hover {
+    color: #fff;
+    background: #3570F2; }
+
 .btn-border-accent {
   border: 2px solid #FED530;
     border-radius: 100px;
