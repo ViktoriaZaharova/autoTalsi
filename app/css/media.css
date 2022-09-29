@@ -311,10 +311,10 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding: 20px 20px 10px; }
+      padding: 20px; }
       .page-product-box__head h3 {
         width: auto; }
-      .page-product-box__head.collapsed:after {
+      .page-product-box__head.collapsed-btn:after {
         content: '';
         display: -webkit-box;
         display: -ms-flexbox;
@@ -327,6 +327,7 @@
                 justify-content: center;
         margin-left: auto;
         width: 12px;
+        min-width: 12px;
         height: 6px;
         background: url("../img/arrow-bottom.svg") no-repeat center;
           background-size: 100%;

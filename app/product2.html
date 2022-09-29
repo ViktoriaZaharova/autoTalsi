@@ -603,11 +603,11 @@
           <h3>Оформить лизинг</h3>
           <form method="post" class="form">
             <label>
-              <input type="text" name="name" placeholder="Имя и фамилия">
+              <input type="text" name="name" placeholder="Имя и фамилия" required>
             </label>
 
             <label>
-              <input type="text" placeholder="Телефон" name="phone" class="phone-input phone-input3">
+              <input type="text" placeholder="Телефон" name="phone" class="phone-input phone-input3" required>
             </label>
 
             <button type="submit" class="btn btn-accent btn-sm">
@@ -684,7 +684,7 @@
           </div>
 
           <div class="page-product-box">
-            <div class="page-product-box__head collapsed" data-toggle="collapse" data-target="#collapseTwo"
+            <div class="page-product-box__head collapsed collapsed-btn" data-toggle="collapse" data-target="#collapseTwo"
                  aria-expanded="true"
                  aria-controls="collapseTwo"><h3>Описание</h3></div>
             <div class="collapse show" id="collapseTwo">
@@ -983,8 +983,8 @@
 
       <div class="col-12 col-lg-6">
         <form method="post" class="form-callback">
-          <label><input type="text" placeholder="Имя*" name="name"></label>
-          <label><input type="text" placeholder="Телефон" class="phone-input phone-input1" name="phone"></label>
+          <label><input type="text" placeholder="Имя*" name="name" required></label>
+          <label><input type="text" placeholder="Телефон" class="phone-input phone-input1" name="phone" required></label>
           <button type="submit" class="btn btn-accent">Проверить условия</button>
 
           <label class="checkbox">

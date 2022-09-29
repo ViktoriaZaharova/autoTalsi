@@ -104,6 +104,10 @@
       border: 1px solid #3570F2; }
       .checkout-form input:focus + .input-text, .checkout-form select:focus + .input-text {
         color: #3570F2; }
+  .checkout-form select {
+    background: #fff url("../img/arrow-select.svg") no-repeat calc(100% - 17px) center;
+      background-size: 12px;
+    height: 55px; }
   .checkout-form .label-error input {
     color: #E14141;
     border-color: #E14141; }
@@ -115,7 +119,7 @@
   .checkout-form .label-error__text {
     color: #E14141;
     font-size: 12px;
-    padding: 3px 0 0 25px; }
+    padding: 3px 0 0 20px; }
   .checkout-form .col-12 {
     padding: 0 5px; }
   .checkout-form .row {
@@ -313,33 +317,33 @@
   border-radius: 50%;
   margin: 40px auto 20px; }
 
-.page-success h1 {
-  margin: 0 0 20px; }
-
-.page-success__content {
-  max-width: 780px;
-  width: 100%;
-  position: relative;
-  z-index: 1; }
-
-.page-success__img {
-  max-width: 443px;
-  position: absolute;
-  bottom: -80px;
-  right: -70px;
-  z-index: -1; }
-  .page-success__img:before {
-    content: '';
+.page-success {
+  padding: 0 0 80px; }
+  .page-success h1 {
+    margin: 0 auto 40px; }
+  .page-success__content {
+    max-width: 780px;
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+  .page-success__img {
+    max-width: 443px;
     position: absolute;
-    background: url("../img/decor-circle-grey.svg") no-repeat center;
-      background-size: 100%;
-    z-index: -1;
-    width: 707px;
-    height: 707px;
-    top: 49%;
-    left: 62%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    bottom: -80px;
+    right: -70px;
+    z-index: -1; }
+    .page-success__img:before {
+      content: '';
+      position: absolute;
+      background: url("../img/decor-circle-grey.svg") no-repeat center;
+        background-size: 100%;
+      z-index: -1;
+      width: 707px;
+      height: 707px;
+      top: 49%;
+      left: 62%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
 
 .inp-file {
   display: none; }
@@ -380,7 +384,8 @@
   padding: 0 44px; }
 
 .form-success__consultation {
-  margin: 40px 0 0; }
+  margin: 40px 0 0;
+  text-align: center; }
 
 .form-success-file {
   width: 100%;

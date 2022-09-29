@@ -109,6 +109,20 @@ label {
   display: block;
   margin: 0 0 10px; }
 
+.label-error__text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0 0 20px; }
+  .label-error__text img {
+    margin: 0 5px 0 0; }
+
 button {
   outline: none;
   padding: 0;
@@ -881,3 +895,6 @@ h2 {
 
 .iti__country-name {
   color: #303030; }
+
+.label-error input {
+  border: 2px solid #E14141; }
