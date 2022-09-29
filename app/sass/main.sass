@@ -113,8 +113,18 @@ label
   color: #fff
   font-size: 14px
   padding: 5px 0 0 20px
-  img
-    margin: 0 5px 0 0
+  &:before
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 2px 5px 0 0
+    width: 14px
+    height: 14px
+    min-width: 14px
+    background: url("../img/error-icon.svg") no-repeat center
+      size: 100%
+
 
 
 button
@@ -184,11 +194,15 @@ strong
   .btn-arrow
     margin: 0 0 0 20px
   &:hover
-    background: $accent
-    color: #fff
-    box-shadow: 0 4px 0 #2a5bbf
+    background: #FFDB4B
+    color: $black
+    box-shadow: 0 4px 0 #E1B400
     .btn-arrow
       fill: #fff
+  &:focus
+    background: #F9CC17
+    box-shadow: 0px 4px 0px #E1B400
+    color: $black
 
 .btn-red
   width: 100%

@@ -120,8 +120,23 @@ label {
   color: #fff;
   font-size: 14px;
   padding: 5px 0 0 20px; }
-  .label-error__text img {
-    margin: 0 5px 0 0; }
+  .label-error__text:before {
+    content: '';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2px 5px 0 0;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    background: url("../img/error-icon.svg") no-repeat center;
+      background-size: 100%; }
 
 button {
   outline: none;
@@ -207,12 +222,17 @@ strong {
   .btn-accent .btn-arrow {
     margin: 0 0 0 20px; }
   .btn-accent:hover {
-    background: #3570F2;
-    color: #fff;
-    -webkit-box-shadow: 0 4px 0 #2a5bbf;
-            box-shadow: 0 4px 0 #2a5bbf; }
+    background: #FFDB4B;
+    color: #303030;
+    -webkit-box-shadow: 0 4px 0 #E1B400;
+            box-shadow: 0 4px 0 #E1B400; }
     .btn-accent:hover .btn-arrow {
       fill: #fff; }
+  .btn-accent:focus {
+    background: #F9CC17;
+    -webkit-box-shadow: 0px 4px 0px #E1B400;
+            box-shadow: 0px 4px 0px #E1B400;
+    color: #303030; }
 
 .btn-red {
   width: 100%;
