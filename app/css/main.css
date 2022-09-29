@@ -898,3 +898,7 @@ h2 {
 
 .label-error input {
   border: 2px solid #E14141; }
+
+.label-error .iti__selected-flag {
+  border: 2px solid #E14141;
+    border-right: none; }

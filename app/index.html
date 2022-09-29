@@ -1236,8 +1236,18 @@
 
       <div class="col-12 col-lg-6">
         <form method="post" class="form-callback">
-          <label><input type="text" placeholder="Имя*" name="name" required></label>
-          <label><input type="text" placeholder="Телефон" class="phone-input phone-input1" name="phone" required></label>
+          <label><input type="text" placeholder="Имя*" name="name" required>
+            <span class="label-error__text">
+                <img src="img/error-icon.svg" alt="">
+                Необходимо указать номер авто
+              </span>
+          </label>
+          <label class="label-error"><input type="text" placeholder="Телефон" class="phone-input phone-input1" name="phone" required>
+            <span class="label-error__text">
+                <img src="img/error-icon.svg" alt="">
+                Необходимо указать номер авто
+              </span>
+          </label>
           <button type="submit" class="btn btn-accent">Проверить условия</button>
 
           <label class="checkbox">
