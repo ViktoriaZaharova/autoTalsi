@@ -228,8 +228,9 @@
     margin: 5px 0 0
 
   .list-tags
-    margin-right: 0
-    width: 100%
+    margin: 0 10px 0 auto
+    //margin-right: 0
+    //width: 100%
 
 
 @media only screen and (max-width: 992px)
@@ -297,6 +298,7 @@
       flex-wrap: wrap
       margin: 0 0 15px
       font-size: 15px
+      max-width: 200px
       p
         width: 100%
         margin: 0
@@ -313,7 +315,6 @@
         margin: 0 20px 0 0
         &:last-child
           margin: 0
-
 
   .btn-burger, .btn-search
     display: flex
@@ -554,6 +555,13 @@
     height: 112px
     padding: 10px
     .decor
+      display: none
+
+  .list-tags
+    margin: 0 10px 0 0
+
+  .page-product-box
+    .collapse:not(.show)
       display: none
 
 
@@ -2213,8 +2221,15 @@
     display: flex
 
   .all-models-result
-    margin: 10px 0 0
+    //margin: 10px 0 0
     text-align: left
+    padding: 9px 17px
+    font-size: 14px
+
+  .list-tags li a
+    padding: 9.5px 17px
+    font-size: 14px
+
 
   //.list-marks li
   //  margin: 0 0 8px

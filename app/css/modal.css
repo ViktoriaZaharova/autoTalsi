@@ -9,6 +9,8 @@
     border-radius: 30px;
   padding: 40px 50px 45px;
   background: #fff; }
+  .modal-content .label-error__text {
+    color: #303030; }
 
 .modal-header {
   padding: 0;

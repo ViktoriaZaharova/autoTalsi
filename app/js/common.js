@@ -441,12 +441,19 @@ $(window).on('load resize', function() {
             autoplaySpeed: 2000,
         });
 
-        $('.product-characteristics .collapse').collapse('toggle');
+        $('.collapsed-btn').attr('data-toggle', 'collapse');
     } else {
         $(".category-cars-slider.slick-initialized").slick("unslick");
-        $('.product-characteristics .collapse').collapse('dispose');
+        $('.product-characteristics .collapse').collapse({
+            toggle: false
+        })
     }
 });
+
+$('.sidebar [data-toggle="collapse"]').collapse({
+    toggle: true,
+});
+
 // slick active
 
 //progressbar

@@ -444,6 +444,8 @@
       height: 15px; }
   .page-product-box .sidebar-box-collapse {
     margin: 0; }
+  .page-product-box .collapse:not(.show) {
+    display: block; }
 
 .characteristics-wrap {
   width: 100%;
