@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     var input2 = document.querySelector(".phone-input2");
     window.intlTelInput(input2, {
-        separateDialCode: true,
+        // separateDialCode: true,
         defaultCountry: 'auto',
         onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
             "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
@@ -49,19 +49,23 @@ $(document).ready(function () {
 
     var input3 = document.querySelector(".phone-input3");
     window.intlTelInput(input3, {
-        separateDialCode: true,
+        // separateDialCode: true,
         defaultCountry: 'auto',
         onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
             "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
             "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
             "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
     });
-    //
-    // var input4 = document.querySelector(".phone-input4");
-    // window.intlTelInput(input4, {
-    //     separateDialCode: true,
-    //     defaultCountry: 'auto'
-    // });
+
+    var input4 = document.querySelector(".phone-input4");
+    window.intlTelInput(input4, {
+        // separateDialCode: true,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
     //
     // var input5 = document.querySelector(".phone-input5");
     // window.intlTelInput(input5, {
@@ -78,8 +82,25 @@ $(document).ready(function () {
 });
 
 // invoke plugin
-$('.inp-file').MultiFile({
-    list: '.files-list'
+// $('.inp-file').MultiFile({
+//     list: '.files-list'
+// });
+
+// this is your selector
+$.fileup({
+    url: window.location.pathname + window.location.search,
+    inputID: 'upload-demo',
+    queueID: 'upload-demo-queue',
+    dropzoneID: '',
+    files: [],
+    fieldName: 'filedata',
+    extraFields: {},
+    // lang: 'en',
+    sizeLimit: 0,
+    filesLimit: 0,
+    method: 'post',
+    timeout: null,
+    autostart: false,
 });
 
 $('.slider-range1').slider({
@@ -274,29 +295,6 @@ $('.popular-models-slider').slick({
     ]
 });
 
-$('.sidebar-close, .overlay-mobile').on('click', function () {
-    $('.sidebar').fadeOut();
-    $('.mobile-wrapper').fadeOut();
-    $('.overlay-mobile').fadeOut();
-});
-
-$('.btn-filter').on('click', function () {
-    $('.overlay-mobile').fadeIn();
-    $('.sidebar').fadeIn();
-});
-
-$('.btn-sorting').on('click', function () {
-    $('.overlay-mobile').fadeIn();
-    $('.mobile-sorting').fadeIn();
-});
-
-$('.btn-search').on('click', function (e) {
-    e.preventDefault();
-    $('.overlay-mobile').fadeIn();
-    $('.mobile-search').fadeIn();
-});
-
-
 $('.product-gallery').slick({
     slidesToShow: 1,
     fade: true,
@@ -345,6 +343,103 @@ $('.product-gallery-preview').slick({
     ]
 });
 
+
+$('.reviews-slider').slick({
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                dots: true
+            }
+        }
+    ]
+});
+
+
+$('.sidebar-close, .overlay-mobile').on('click', function () {
+    $('.sidebar').fadeOut();
+    $('.mobile-wrapper').fadeOut();
+    $('.overlay-mobile').fadeOut();
+});
+
+$('.btn-filter').on('click', function () {
+    $('.overlay-mobile').fadeIn();
+    $('.sidebar').fadeIn();
+});
+
+$('.btn-sorting').on('click', function () {
+    $('.overlay-mobile').fadeIn();
+    $('.mobile-sorting').fadeIn();
+});
+
+$('.btn-search').on('click', function (e) {
+    e.preventDefault();
+    $('.overlay-mobile').fadeIn();
+    $('.mobile-search').fadeIn();
+});
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 992) {
+        $('.category-cars-slider:not(.slick-initialized)').slick({
+            dots: false,
+            slidesToShow: 1,
+            arrows: false,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+        $('.collapsed-btn').attr('data-toggle', 'collapse');
+    } else {
+        $(".category-cars-slider.slick-initialized").slick("unslick");
+        $('.product-characteristics .collapse').collapse({
+            toggle: false
+        })
+    }
+
+    if ($(window).width() > 576) {
+        $('.car-availability-slider:not(.slick-initialized)').slick({
+            dots: false,
+            slidesToShow: 4,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
+
+    } else {
+        $(".car-availability-slider.slick-initialized").slick("unslick");
+    }
+});
+
+$('.sidebar [data-toggle="collapse"]').collapse({
+    toggle: true,
+});
+
+
 // hidden list > 5
 $('.sidebar .sidebar-box').each(function () {
     if ($(this).find('ul li').length > 5) {
@@ -373,6 +468,7 @@ $('.load-more-wrap').on('click', function (e) {
 
 
 
+
 // $(function () {
 //     $("#filter__range").slider({
 //         min: 0,
@@ -393,66 +489,6 @@ $('.load-more-wrap').on('click', function (e) {
 //     $('#filter__range .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + '€' + $('#filter__range').slider('values', 1) + '</span>');
 // });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$('.reviews-slider').slick({
-    slidesToShow: 3,
-    arrows: false,
-    dots: true,
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-            }
-        }
-    ]
-});
-
-
-
-// slick active
-$(window).on('load resize', function() {
-    if ($(window).width() < 992) {
-        $('.category-cars-slider:not(.slick-initialized)').slick({
-            dots: false,
-            slidesToShow: 1,
-            arrows: false,
-            variableWidth: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
-
-        $('.collapsed-btn').attr('data-toggle', 'collapse');
-    } else {
-        $(".category-cars-slider.slick-initialized").slick("unslick");
-        $('.product-characteristics .collapse').collapse({
-            toggle: false
-        })
-    }
-});
-
-$('.sidebar [data-toggle="collapse"]').collapse({
-    toggle: true,
-});
 
 // slick active
 

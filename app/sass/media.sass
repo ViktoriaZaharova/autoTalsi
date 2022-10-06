@@ -1,39 +1,6 @@
 @import "vars"
 
 /*==========  Desktop First  ==========
-//@media only screen and (max-width: 1800px)
-//  .callback-image
-//    right: 100px
-//
-//  .callback-v2
-//    .callback-image
-//      right: 100px
-
-
-//@media only screen and (max-width: 1670px)
-//  .callback-image
-//    right: 0
-//
-//  .callback-v2
-//    .callback-image
-//      right: 0
-//
-//
-//@media only screen and (max-width: 1500px)
-//  .callback-image
-//    max-width: 410px
-//    top: 55px
-//
-//  .callback-v2
-//    .callback-image
-//      max-width: 410px
-//      top: 55px
-
-//@media only screen and (max-width: 1300px)
-//  .callback-image, .callback-v2 .callback-image
-//    max-width: 360px
-//    top: 70px
-
 @media only screen and (max-width: 1200px)
   .footer-col
     margin: 0 30px 0 0
@@ -92,130 +59,23 @@
   .quick-contacts-item-phone .decor
     right: -30px
 
-
-
-
-
-  //.callback-image
-  //  max-width: 300px
-  //  top: auto
-  //  bottom: -50px
-
-
-
-  //.callback-v2
-  //  .callback-image
-  //    max-width: 300px
-  //    top: auto
-  //    bottom: -50px
-
-
-  .home-manslizing .main-slider__item-img
-    max-width: 500px
+  .home-leasing .main-slider__item-img
     width: 100%
+    max-width: 750px
+    right: 0
 
+  .car-availability-slider
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
 
-  //.menu .dropdown-menu
-  //  padding: 20px
-
-
-//.footer-row
-//  -webkit-box-pack: justify
-//  -ms-flex-pack: justify
-//  justify-content: space-between
-//
-//.btn-group-map
-//  padding: 0
-//  margin: 0 0 30px
-//
-//.footer-center
-//  padding: 36px 0 0
-//
-//  .container
-//    -webkit-box-pack: justify
-//    -ms-flex-pack: justify
-//    justify-content: space-between
-//
-//.footer-box
-//  margin: 0 0 30px
-//
-//.btn-subscribe
-//  margin: -27px 0 -2px
-
-//.form
-//  max-width: 400px
-
-//.conditions-content
-//  width: calc(100% - 400px)
-//  padding: 0 30px 0 0
-
-//.list-social-subscribe li
-//  margin: 0 50px 0 0
-
-//.professional-images
-//  width: 470px
-//  height: auto
-//
-//.professional-images__content
-//  font-size: 14px
-//  max-width: 266px
-//  -webkit-box-orient: vertical
-//  -webkit-box-direction: normal
-//  -ms-flex-direction: column
-//  flex-direction: column
-//  -webkit-box-align: end
-//  -ms-flex-align: end
-//  align-items: flex-end
-//  text-align: right
-//  padding: 5px 20px 10px
-//  bottom: 20px
-//
-//  p
-//    font-size: 44px
-//    margin: 0
-//
-//.professional-content
-//  width: calc(100% - 470px)
-//
-//.professional
-//  &:before
-//    display: none
-//
-//  &:after
-//    font-size: 150px
-//    right: -180px
-//    top: 100px
-
-
-
-
-//.btn-phone
-//  width: 80px
-//  height: 50px
-//
-//.form-footer
-//  -ms-flex-wrap: wrap
-//  flex-wrap: wrap
-//
-//  button
-//    max-width: none
-//
-//  .checkbox
-//    width: 100%
-//    padding: 0
-//    margin: 19px 0 0
-//
-//.page-product-gallery
-//  width: 570px
-
-//.page-product-information
-//  width: calc(100% - 570px)
-
-//.product-gallery-preview
-//  padding: 0 30px
-//
-//.conditions-product .form, .checkout-form
-//  max-width: none
+  .reviews-slider
+    padding: 0 24px
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
 
 
 /* Medium Devices, Desktops
@@ -229,8 +89,6 @@
 
   .list-tags
     margin: 0 10px 0 auto
-    //margin-right: 0
-    //width: 100%
 
 
 @media only screen and (max-width: 992px)
@@ -564,10 +422,13 @@
     .collapse:not(.show)
       display: none
 
+  .page-success
+    h1
+      img
+        max-width: 60px
 
-
-  //.form-search
-  //  max-width: 300px
+  .form-success-box
+    padding: 30px
 
   .main-form
     max-width: 320px
@@ -575,34 +436,6 @@
 
     h3
       font-size: 18px
-
-    //
-    //.icon
-    //  max-width: 22px
-    //  min-width: 22px
-    //  margin: 0 0 0 5px
-
-  //.callback-image, .callback-v2 .callback-image
-  //  max-width: 360px
-  //  right: auto
-  //  bottom: -55px
-  //  left: 50%
-  //  transform: translate(-50%,0)
-
-  //.callback-wrapper
-  //  padding: 60px 0 150px
-  //  &:before
-  //    width: 302px
-  //    height: 302px
-  //    top: auto
-  //    bottom: -151px
-  //    filter: blur(200px)
-
-
-
-  //.list-marks
-  //  margin: 40px 0 0
-
 
   .form-description
     padding: 0
@@ -627,6 +460,24 @@
     text-align: left
     padding: 9px 0
 
+  .callback
+    .form-callback
+      margin: 20px 0 0
+
+  .subtitle
+    font-size: 20px
+
+  .home-leasing .main-slider__item-img
+    max-width: 650px
+    right: 10px
+    bottom: 0
+
+  .steps-work-box2
+    &:before
+      display: none
+
+
+
 
 
 
@@ -636,16 +487,15 @@
   .product-gallery-preview
     margin: 0 0 20px
 
-  .home-manslizing .main-slider__item-img
-    max-width: 400px
-    bottom: 0
-    right: 200px
+  //.home-manslizing .main-slider__item-img
+  //  max-width: 400px
+  //  bottom: 0
+  //  right: 200px
+  //
 
-  .subtitle
-    font-size: 20px
-
-  .home-manslizing .main-content
-    max-width: 450px
+  //
+  //.home-manslizing .main-content
+  //  max-width: 450px
 
   .documents
     padding: 60px 0 35px
@@ -1005,46 +855,34 @@
     width: 100%
     z-index: 1
 
-
-
-
-
-
-
-
-
-
-  .home-manslizing
-    .container
-      &:before, &:after
-        top: 50%
-        transform: translate(-50%, -50%)
-
-    .main-slider__item-img
-      max-width: none
-      right: 0
-
-    .main-content
-      max-width: none
-      width: 100%
-
-      ul
-        column-count: 1
-        max-width: 350px
-        margin: 0 auto
-        font-weight: normal
-
   .subtitle
     margin: 0 auto 20px
-    font-size: 18px
+
+  h1
+    font-size: 26px
+
+  .home-leasing
+    .main-content
+      max-width: 400px
+    h1
+      text-align: left
+    .main-slider__item-img
+      max-width: 500px
+      position: absolute
+      right: 70px
+    .main-form
+      margin: 0
+
+  .subtitle
+    text-align: left
 
 
-  .phone-wrapper__mobile
-    display: flex
+  //.phone-wrapper__mobile
+  //  display: flex
 
-  .page-product-gallery
-    width: 100%
-    max-width: none
+  //.page-product-gallery
+  //  width: 100%
+  //  max-width: none
 
   //.page-product-information
   //  width: 100%
@@ -1063,35 +901,34 @@
   //.page-product-information__head h1
   //  margin: 10px auto 17px
 
-  .name-company
-    font-size: 18px
-
-  h1
-    font-size: 26px
+  //.name-company
+  //  font-size: 18px
 
 
-  .news-img
-    height: 200px
 
-  .news-column
-    width: 48%
-
-  .btn-load
-    margin: 20px auto 0
-
-  .news-item__img
-    height: 120px
-
-  .page-article-slider__item .image
-    height: auto
-
-  .date-article
-    font-size: 15px
-
-  .blockquote
-    padding: 30px
-    margin: 30px 0 0
-    font-size: 16px
+  //
+  //.news-img
+  //  height: 200px
+  //
+  ////.news-column
+  ////  width: 48%
+  //
+  //.btn-load
+  //  margin: 20px auto 0
+  //
+  ////.news-item__img
+  ////  height: 120px
+  //
+  ////.page-article-slider__item .image
+  ////  height: auto
+  //
+  //.date-article
+  //  font-size: 15px
+  //
+  //.blockquote
+  //  padding: 30px
+  //  margin: 30px 0 0
+  //  font-size: 16px
 
 
 @media only screen and (max-width: 768px)
@@ -1232,495 +1069,81 @@
       h3
         font-size: 22px
 
-
-
-
-
-  //.list-marks li
-  //  width: 20%
-
-  //.advantages-box
-  //  padding: 19px 15px 19px 20px
-  //
-  //  &__icon
-  //    width: 60px
-  //    min-width: 60px
-  //
-  //  &__body
-  //    width: calc(100% - 60px)
-  //    padding: 0 0 0 30px
-
-  //.callback-v2
-  //  .callback-wrapper
-  //    &:before
-  //      right: auto
-  //      left: 50%
-  //      transform: translate(-50%, 0)
-  //      top: auto
-  //      width: 302px
-  //      height: 302px
-  //      bottom: -151px
-
-  //.footer-menu
-  //  width: 50%
-  //  margin: 0 0 30px
-  //  font-size: 16px
-  //  &:first-child
-  //    margin: 0 0 30px
-  //
-  //.footer-box
-  //  width: 100%
-  //  margin: 0 0 15px
-  //  font-size: 16px
-  //  &:last-child
-  //    margin: 0
-  //  .mail, .phone, .schedule-box
-  //    font-size: 16px
-  //
-  //.footer-bottom
-  //  padding: 10px 0
-  //  text-align: center
-  //
-  //
-  //.copyright
-  //  margin: 10px auto 0
-  //  width: 100%
-
-  //.schedule-box__text
-  //  max-width: none
-
-
-  //.checkout-stages
-  //  margin: 0 0 20px
-  //  font-size: 16px
-  //
-  //.checkout-stages-lines
-  //  margin: 15px 0 0
-  //
-  //.checkout-stages-box
-  //  margin: 0 10px 0 0
-  //  width: 80px
-
-
-  //.page-product-box
-  //  margin: 0 0 30px
-  //
-  //  &__head
-  //    padding: 0 0 15px
-  //
-  //  &__body
-  //    padding: 15px 0 0
-  //    font-size: 14px
-  //
-  //    .box-text
-  //      font-size: 14px
-  //
-  //  h4
-  //    font-size: 16px
-  //
-  //  ul
-  //    font-size: 14px
-  //    margin: 0 0 20px
-  //
-  //    &:last-child
-  //      margin: 0 0 20px
-  //
-  //  .mail
-  //    margin: 0 0 20px
-  //
-  //  .footer-box
-  //    .list-maps
-  //      margin: 0
-  //
-  //      li
-  //        margin: 0
-  //
-  //  .waze-link
-  //    margin: 0 0 20px
-
-
-
-  //.benefit
-  //  padding: 60px 0 20px
-  //
-  //  h2
-  //    text-align: left
-  //    margin: 0 auto 10px
-  //
-  //  .logo-company
-  //    max-width: 120px
-  //
-  //.priority-box
-  //  padding: 13px 5px
-  //  max-width: 170px
-  //
-  //.benefit-table-row
-  //  padding: 50px 0 0
-  //
-  //.benefit-table-list
-  //  font-size: 14px
-  //
-  //  > li
-  //    &:nth-child(3)
-  //      min-height: 60px
-  //
-  //.benefit-table-col
-  //  h3
-  //    font-size: 14px
-  //
-  //  &__head
-  //    min-height: 26px
-
-
-  //.no-priority-box
-  //  max-width: 160px
-  //  padding: 13px 5px
-  //
-  //.list-star li
-  //  width: 18px
-  //  height: 18px
-  //  margin: 0 4px 0 0
-  //
-  //  &:last-child
-  //    margin: 0
-
-  //.callback-v3 .form-callback label
-  //  max-width: none
-  //
-  //.callback-v3 .form-callback
-  //  justify-content: space-between
-
-  //.form-success
-  //  .form-group
-  //    flex-wrap: wrap
-  //
-  //    label
-  //      width: 100%
-  //      max-width: none
-  //      margin: 0 0 10px
-  //
-  //    .radio-mail
-  //      max-width: none
-  //
-  //.radio-text__content
-  //  margin: 0 0 0 8px
-
-  //.modal-content
-  //  padding: 40px 30px
-  //
-  //.modal-title
-  //  line-height: 32px
-  //  font-size: 26px
-
-  //.modal-header
-  //  margin: 0 0 10px
-  //
-  //.modal-body
-  //  .box-text
-  //    margin: 0 auto 20px
-
-  //.fileup-file.fileup-image .fileup-preview
-  //  width: 62px
-  //  height: 46px
-
-
-  //.social-content
-  //  padding: 35px 20px 28px
-  //  -webkit-box-orient: vertical
-  //  -webkit-box-direction: normal
-  //  -ms-flex-direction: column
-  //  flex-direction: column
-  //  -webkit-box-align: center
-  //  -ms-flex-align: center
-  //  align-items: center
-  //  text-align: center
-  //
-  //  h3
-  //    text-align: center
-  //    margin: 0 auto 55px
-  //    max-width: 211px
-  //    font-size: 18px
-
-  //.list-social-subscribe
-  //  width: 100%
-  //  -webkit-box-pack: justify
-  //  -ms-flex-pack: justify
-  //  justify-content: space-between
-  //
-  //  li
-  //    margin: 0
-
-  //.conditions
-  //  padding: 40px 20px
-  //
-  //  h2
-  //    font-size: 18px
-  //    margin: 0 auto 10px
-
-  //.conditions-content
-  //  width: 100%
-  //  text-align: center
-  //  padding: 0
-  //  margin: 0 0 19px
-  //  font-size: 14px
-
-  //.btn-accent
-  //  font-size: 15px
-  //
-  //  .btn-arrow
-  //    margin: 0 0 0 20px
-
-  //.form
-  //  max-width: none
-  //
-  //  .checkbox
-  //    margin: 19px 0 0
-  //
-  //  input, .select-checkout
-  //    height: 45px
-
-  //.input-text
-  //  font-size: 14px
-  //
-  //.label-wrapper
-  //  padding: 0 15px
-
-  //.checkbox-custom
-  //  margin: 0 15px 0 0
-  //
-  //.checkbox
-  //  font-size: 12px
-
-  //.btn-accent:after
-  //  width: 77px
-
-  //.social-icon-inst
-  //  width: 30px
-  //  height: 36px
-  //
-  //.social-icon-tg
-  //  width: 34px
-  //  height: 36px
-
-  //.social-icon-fb
-  //  width: 19px
-  //  height: 36px
-
-
-
-  //.btn-all
-  //  margin: 5px auto 0
-
-
-  //.filter-wrapper h2
-  //  font-size: 21px
-  //  margin: 0 0 12px
-
-
-
-  //.catalog-content
-  //  width: 100%
-  //  padding: 0
-
-
-  //.page-catalog-wrapper
-  //  margin: 0 0 60px
-
-  //.sidebar-title
-  //  padding: 15px 20px
-
-  //.sidebar-box .inp-group-item
-  //  font-size: 13px
-  //
-  //  input
-  //    width: calc(100% - 25px)
-  //
-  //  width: 49%
-
-  //.brands-slider__group
-  //  -webkit-box-orient: vertical
-  //  -webkit-box-direction: normal
-  //  -ms-flex-direction: column
-  //  flex-direction: column
-  //  align-self: flex-start
-  //
-  //.brands-slider__box
-  //  width: 160px
-  //  height: 100px
-  //  margin: 0 20px 20px 0
-  //
-  //  &:last-child
-  //    margin-bottom: 0
-  //
-  //.brands-slider
-  //  margin: 50px 0 0
-
-  //.page-contacts-box
-  //  width: 50%
-
-//.product-gallery-item
-//  height: 300px
-
-//.btn-event
-//  padding: 0 30px
-//
-//  .btn-icon
-//    width: 14px
-//    height: 12px
-//    margin: 0 0 0 12px
-
-//.characteristics-wrap
-//  -webkit-column-count: 3
-//  -moz-column-count: 3
-//  column-count: 3
-
-//.page-product-box
-//  margin: 0 0 30px
-//
-//.page-product-wrapper
-//  margin: 0 0 32px
-//
-//.select-checkout
-//  padding: 0 15px 0 13px
-//  background-position: calc(100% - 15px) center
-//  font-size: 14px
-//
-//.label-select .label-wrapper
-//  padding: 0 13px
-
-//.checkout-form
-//  margin: 24px 0 0
-//
-//  label
-//    margin: 0 0 25px
-//
-//  input
-//    padding: 0 13px
-//    font-size: 14px
-//
-//  .label-wrapper
-//    padding: 0 13px
-//
-//  .list-checkbox .checkbox
-//    margin: 0
-//    font-size: 14px
-
-//.input-description
-//  padding: 2px 13px
-
-//.checkout-body
-//  padding: 36px 15px 30px
-//
-//.checkout-head
-//  padding: 20px
-//
-//  .btn
-//    font-size: 16px
-//
-//  .btn-arrow
-//    margin: 0 0 0 15px
-//    width: 18px
-//    height: 12px
-
-
-
-//.news-img
-//  height: 170px
-
-
-
-
-
-/* Extra Small Devices, Phones
-@media only screen and (max-width: 650px)
-  //header
-  //  .schedule-box
-  //    display: none
-  //
-  //  .logo
-  //    margin: 0 auto 0 0
-
-  //.list-characteristics-product
-  //  li
-  //    align-items: flex-start
-  //
-  //    &:before
-  //      bottom: auto
-  //      top: 19px
-  //
-  //    p
-  //      max-width: 153px
-  //
-  //    span
-  //      min-width: 150px
-  //      max-width: 150px
-  //      white-space: normal
-
-  //.product-characteristics
-  //  padding: 30px 20px
-
-
-  //.button-group
-  //  width: 100%
-  //  margin: 10px 0 0
-  //  -webkit-box-pack: justify
-  //  -ms-flex-pack: justify
-  //  justify-content: space-between
-  //
-  //  .btn
-  //    margin: 0 0 5px 0
-  //
-  //    &:last-child
-  //      margin: 0 0 5px
-
-  //.requisites-body
-  //  padding: 30px 16px
-  //
-  //.list-requisites
-  //  width: 100%
-  //  border: none
-  //  font-size: 12px
-  //  line-height: 100%
-  //  padding: 0
-  //  margin: 0 0 11px
-  //
-  //  &:last-child
-  //    margin: 0
-  //
-  //  &:first-child
-  //    border: none
-  //    width: 100%
-  //
-  //  &:last-child
-  //    width: 100%
-  //
-  //  &:first-child li, &:last-child li
-  //    margin: 0 0 10px
-  //
-  //  &:first-child li span, &:last-child li span
-  //    width: 55%
-  //    font-size: 11px
-  //
-  //  &:first-child li p, &:last-child li p
-  //    width: 45%
-  //
-  //.requisites-body
-  //  -ms-flex-wrap: wrap
-  //  flex-wrap: wrap
-  //
-  //.requisites-head
-  //  padding: 15px
-  //  text-align: center
-  //
-  //  h4
-  //    font-size: 16px
-  //
-  //.callback-two
-  //  padding: 60px 0
-
-
-  //.benefit-table-list > li
-  //  padding: 6px 10px
+  .page-success
+    h1
+      flex-direction: column
+      align-items: center
+      margin: 0 auto 20px
+      img
+        margin: 0 auto 10px
+
+  .home-leasing
+    margin: 0 0 409px
+    padding: 40px 0 42px
+    h1
+      text-align: center
+    .main-content
+      margin: 0 auto
+    .box-text
+      ul
+        max-width: 338px
+        text-align: left
+        line-height: normal
+        font-size: 13px
+        li
+          width: 50%
+          margin: 0 0 14px
+          align-items: flex-start
+          &:before
+            margin: 4px 8px 0 0
+    .main-form
+      margin: -30px auto -399px
+      max-width: 330px
+    .main-slider__item-img
+      max-width: 450px
+      min-width: auto
+      position: relative
+      right: 0
+      bottom: 0
+      margin: -120px auto 0
+      z-index: -1
+      img
+        display: none
+      .img-mobile
+        display: block
+    .container
+      flex-direction: column
+      align-items: center
+
+  .subtitle
+    text-align: center
+
+  .steps-work
+    margin: 0 0 30px
+    .mb-30
+      margin-bottom: 30px
+
+  .steps-work-box
+    margin: 0 0 30px
+
+  .services
+    margin: 0 0 60px
+
+  .services-image
+    margin: 0 auto 30px
+    max-width: 267px
+
+  .box-text p
+    margin: 0 0 20px
+
+  .reviews-box
+    padding: 30px 20px
+    &__user
+      padding: 0 0 0 10px
+
+  .reviews-slider
+    .slick-dots
+      margin: 0
 
 @media only screen and (max-width: 576px)
   .footer-top__content
@@ -2006,8 +1429,6 @@
     .img-mobile
       display: block
 
-
-
   .professional
     .box-text
       margin: 0 0 17px
@@ -2190,12 +1611,81 @@
       .img-mobile
         display: block
 
+  .page-success
+    padding: 0 0 60px
 
+  .form-success-file
+    padding: 30px 15px
 
+  .form-success
+    &-file
+      margin: 0 0 20px
 
+      .box-text
+        margin: 0 auto 20px
+
+      .label-file
+        max-width: none
+
+    button
+      max-width: none
+      width: 100%
+
+  .form-success__consultation
+    margin: 30px 0 0
+
+  #thanks-successModal
+    .modal-content
+      padding: 64px 30px 50px
+
+    .modal-body
+      margin: 10px auto 0
+    .btn
+      margin: 30px auto 0
+
+  .callback .form-callback
+    label
+      width: 100%
+
+  .home-leasing
+    h1
+      margin: 0 auto 10px
+
+  .links-prev
+    margin: 20px auto 0
 
   .main-form
     padding: 30px 20px
+
+  .steps-work-box
+    &:before
+      display: none
+
+  .steps-work
+    margin: 0 0 30px
+    h2
+      max-width: 225px
+      margin: 0 auto
+
+  .car-availability-slider
+    .card-col
+      display: none
+      &:nth-child(-n+4)
+        display: block
+
+  .advantages-box-leasing
+    margin: 0 auto
+
+  .advantages-leasing
+    .mb-20
+      margin-bottom: 20px
+
+  .about-company-advantages
+    margin: 20px 0 0
+    &__text
+      max-width: none
+
+
 
 
   .list-dots
@@ -2230,49 +1720,6 @@
     padding: 9.5px 17px
     font-size: 14px
 
-
-  //.list-marks li
-  //  margin: 0 0 8px
-  //  width: 25%
-  //
-  //.marks
-  //  margin: 60px 0 52px
-
-  //.advantages
-  //  h2
-  //    margin: 0 0 30px
-  //
-  //.question
-  //  padding: 60px 0 50px
-  //
-  //  .container
-  //    &:before
-  //      filter: blur(320px)
-  //      left: -100px
-  //      top: 0
-  //      width: 230px
-  //      height: 230px
-  //      transform: none
-  //
-  //  h2
-  //    margin: 0 0 20px
-  //    text-align: left
-  //
-  //.question-box
-  //  padding: 15px 0
-  //  margin: 0 0 10px
-  //
-  //  &:last-child
-  //    margin: 0 0 10px
-  //
-  //  &__head
-  //    padding: 0 12px 0 14px
-  //
-  //  &__body
-  //    padding: 10px 0 16px 15px
-  //    font-size: 14px
-  //    color: #6F766B
-
   .mb-30
     margin-bottom: 20px
 
@@ -2283,65 +1730,10 @@
       &:last-child
         margin: 0
 
-  //.contacts
-  //  padding: 25px 0 313px
-  //
-  //.contacts-box
-  //  max-width: none
-  //  padding: 24px 9px 24px 20px
-
-
-
-  //.h1
-  //  font-size: 26px
-
-
-  .links-prev
-    margin: 20px auto 0
-
-
-
-  //.label-file-result__delete, .fileup-file .fileup-controls .fileup-remove
-  //  width: 13px
-  //  height: 13px
-
-
 
   .total-val-result
     font-size: 13px
 
-  //.card-banner
-  //  min-height: 247px
-  //
-  //  h3
-  //    font-size: 16px
-  //
-  //  .btn
-  //    height: 40px
-  //    font-size: 14px
-
-
-  .home-manslizing
-    h1
-      max-width: 304px
-
-    .main-content
-      ul
-        max-width: 260px
-
-
-  .subtitle
-    max-width: 220px
-
-  .stages-work
-    padding: 60px 0 40px
-
-    .mb-20
-      margin-bottom: 20px
-
-  .stages-work-box
-    .box-text
-      max-width: none
 
   .documents
     .box-text
@@ -2386,40 +1778,6 @@
       width: 50px
       min-width: 50px
 
-  .page-success
-    padding: 40px 0
-
-  .form-success
-    &-file
-      margin: 0 0 20px
-
-      .box-text
-        margin: 0 0 15px
-
-      .label-file
-        max-width: none
-
-    button
-      max-width: none
-      width: 100%
-
-  .radio-text
-    flex-wrap: wrap
-
-  .radio-mail
-    align-items: flex-start
-    padding: 16px
-
-  .radio-text__content
-    max-width: 100%
-    margin: 15px 0 0
-
-    input
-      height: 44px
-
-  .form-success__consultation
-    margin: 30px 0 0
-
   .messengers-box
     flex-direction: column
     align-items: flex-start
@@ -2434,340 +1792,18 @@
         width: 44px
         height: 44px
 
-  //.footer-box
-  //  width: 100%
-  //
-  //  h3
-  //    font-size: 16px
-  //    margin: 0 0 15px
-  //
-  //  &:first-child .footer-menu
-  //    display: -webkit-box
-  //    display: -ms-flexbox
-  //    display: flex
-  //    -webkit-box-align: start
-  //    -ms-flex-align: start
-  //    align-items: flex-start
-  //    -webkit-box-pack: justify
-  //    -ms-flex-pack: justify
-  //    justify-content: space-between
-  //    -ms-flex-wrap: wrap
-  //    flex-wrap: wrap
-  //
-  //    li
-  //      width: 50%
-  //
-  //      &:first-child, &:nth-child(3)
-  //        -webkit-box-ordinal-group: 0
-  //        -ms-flex-order: -1
-  //        order: -1
-  //
-  //.footer-menu li
-  //  margin: 0 0 10px
-  //
-  //.form label
-  //  max-width: none
+  .reviews
+    margin: 60px 0
 
-  //.professional-advantages
-  //  -webkit-box-orient: vertical
-  //  -webkit-box-direction: normal
-  //  -ms-flex-direction: column
-  //  flex-direction: column
-  //  -webkit-box-align: start
-  //  -ms-flex-align: start
-  //  align-items: flex-start
+  .question-box__head
+    padding: 10px 20px
 
+  .question-box__body
+    padding: 15px 0 0 20px
 
+  .news-section
+    margin: 60px 0 0
 
-  //.select
-  //  height: 50px
-  //  font-size: 16px
-  //  padding: 0 20px 0 9px
-
-  //.inp-group-item
-  //  height: 55px
-  //  padding: 6px 9px
-  //  font-size: 10px
-  //
-  //  input
-  //    font-size: 16px
-  //    margin: 2px 0 0
-
-
-  //.page-top .links-next
-  //  display: none
-
-
-  //.brands-slider__box
-  //  width: 130px
-  //  height: 86px
-  //  margin: 0 10px 20px
-  //
-  //  &:last-child
-  //    margin-bottom: 0
-
-  //.page-contacts-box
-  //  width: 100%
-  //
-  //  h3
-  //    font-size: 16px
-  //    margin: 0 0 10px
-  //
-  //    &:before
-  //      margin: 0 13.5px 0 0
-
-  //.page-contacts-box__body
-  //  padding: 0 0 0 20px
-  //  max-width: none
-
-  //.page h1
-  //  font-size: 21px
-  //  margin: 0 0 23px
-  //
-  //  &:before
-  //    width: 13px
-  //    height: 20px
-  //    margin: 0 9px 0 0
-
-  //.contacts-map
-  //  margin: 20px -15px 60px
-  //  width: calc(100% + 30px)
-  //  height: 300px
-
-  //.page-product-seller
-  //  -webkit-box-orient: vertical
-  //  -webkit-box-direction: normal
-  //  -ms-flex-direction: column
-  //  flex-direction: column
-  //  -webkit-box-align: start
-  //  -ms-flex-align: start
-  //  align-items: flex-start
-  //  padding: 9px 10px
-  //
-  //.seller-item
-  //  margin: 0 0 5px
-  //
-  //  &:last-child
-  //    margin: 0
-
-  //.page-product h1
-  //  margin: 0 0 13px
-
-  //.page-product-wrapper
-  //  .old-price
-  //    font-size: 16px
-  //
-  //  .new-price
-  //    font-size: 35px
-  //
-  //.product-gallery-item
-  //  height: 193px
-  //
-  //.product-gallery
-  //  margin: 0 0 7px
-  //
-  //.product-gallery-preview .product-gallery-item
-  //  width: 77px
-  //  height: 54px
-
-  //.conditions-product
-  //  width: calc(100% + 40px)
-  //  margin: 0 -20px
-  //  padding: 32px 20px 24px
-  //
-  //  h3
-  //    font-size: 21px
-  //    margin: 0 auto 15px
-
-  //.btn-event
-  //  width: 100%
-  //  padding: 0 49px
-  //
-  //.buttons-events
-  //  margin: 40px 0 60px
-  //  font-size: 16px
-  //
-  //  strong
-  //    font-size: 18px
-  //
-  //  span strong
-  //    font-size: 21px
-  //
-  //  .container
-  //    padding: 0
-
-  //.page-product-box__body
-  //  padding: 20px
-
-  //.page-product-box
-  //  h4
-  //    font-size: 14px
-  //    margin: 0 0 19px
-  //
-  //  h3
-  //    font-size: 18px
-  //    text-align: center
-  //    margin: 0 auto
-  //
-  //  h5
-  //    font-size: 16px
-  //    margin: 0 0 5px
-
-  //.list-cube
-  //  font-size: 14px
-  //  margin: 0 0 11px
-
-  //.page-product-box__it
-  //  margin: 0 0 18px
-  //
-  //.page-product-box__head
-  //  padding: 0 10px 10px
-
-  //.characteristics-wrap
-  //  -webkit-column-count: 1
-  //  -moz-column-count: 1
-  //  column-count: 1
-  //
-  //.characteristics-wrap-body
-  //  padding: 0
-  //
-  //  h4
-  //    margin: 0
-  //    padding: 15px
-
-  //.characteristics-item
-  //  padding: 15px 19px
-  //  margin: 0
-  //  border-top: 1px solid #DDE0DC
-  //
-  //  ul
-  //    display: none
-  //
-  //  h5
-  //    margin: 0
-  //    display: -webkit-box
-  //    display: -ms-flexbox
-  //    display: flex
-  //    -webkit-box-align: center
-  //    -ms-flex-align: center
-  //    align-items: center
-  //
-  //    &:after
-  //      content: ''
-  //      display: inline-block
-  //      margin: 0 0 0 auto
-  //      width: 8px
-  //      height: 8px
-  //      background: url("../img/arrow-bottom.svg") no-repeat center
-  //      background-size: contain
-  //
-  //    &.click:after
-  //      -webkit-transform: rotate(180deg)
-  //      transform: rotate(180deg)
-  //
-  //  ul
-  //    padding: 7px 0 0
-  //
-  //    li
-  //      margin: 0 0 1px
-
-
-
-  //.checkout-form .list-checkbox
-  //  -webkit-box-orient: vertical
-  //  -webkit-box-direction: normal
-  //  -ms-flex-direction: column
-  //  flex-direction: column
-  //  -webkit-box-align: start
-  //  -ms-flex-align: start
-  //  align-items: flex-start
-  //
-  //  li
-  //    margin: 0 0 10px
-
-
-
-  //.checkout-form h3
-  //  font-size: 16px
-
-
-
-
-
-  //.news-column
-  //  width: 100%
-  //
-  //.news-img, .news-item__img
-  //  height: auto
-
-  //.page-article-slider__nav
-  //  padding: 15px
-  //
-  //.counter-slide .current:after
-  //  width: 60px
-  //
-  //.blockquote
-  //  padding: 20px
-  //  font-size: 15px
-  //
-  //.recommended-news
-  //  padding: 50px 0
-  //
-  //  h2
-  //    font-size: 24px
-  //
-  //.list-schedule
-  //  margin: 10px 0 0
-  //  width: 100%
-  //
-  //  li
-  //    margin: 0 0 0 10px
-  //
-  //    &:first-child
-  //      margin: 0
-
-
-//.btn-group-map
-//  -webkit-box-orient: vertical
-//  -webkit-box-direction: normal
-//  -ms-flex-direction: column
-//  flex-direction: column
-//  -webkit-box-align: start
-//  -ms-flex-align: start
-//  align-items: flex-start
-//  margin: 6px 0 15px
-//
-//  .btn
-//    margin: 0 0 10px
-//    height: 43px
-
-
-
-//.checkout-form
-//  margin: 24px 0
-
-
-//.engine-type
-//  max-width: 23px
-//  overflow: hidden
-//  white-space: nowrap
-
-//.year-text
-//  white-space: nowrap
-//  overflow: hidden
-//  max-width: 32px
-
-//.mileage
-//  display: flex
-
-//.type-transmission
-//  display: none
-
-//.social-content:before
-//  width: 268px
-//  height: 164px
-//  top: -13px
-//  left: -89px
 
 @media (max-width: 480px)
   .card-footer
@@ -2817,17 +1853,11 @@
   .product-gallery-item
     height: 228px
 
-@media (max-width: 420px)
-  //.header-top
-  //  .phone-icon
-  //    margin: 0
-  //    width: 26px
-  //    height: 26px
-  //    min-width: 26px
-  //
-  //  .phone-text, .mail
-  //    display: none
+  .home-leasing
+    .main-slider__item-img
+      margin: -80px auto 0
 
+@media (max-width: 420px)
   .brand-item
     font-size: 14px
     &__img
@@ -2855,46 +1885,11 @@
     .card-col
       padding: 0 5px
 
-  //.list-characteristics
-  //  font-size: 10px
-  //
-  //  li
-  //    height: 19px
-  //
-  //.label-list
-  //  font-size: 10px
-  //  padding: 5px
-  //
-  //  li
-  //    height: 20px
-  //    padding: 1px 6px
-  //
-  //.list-tags
-  //  justify-content: space-between
-  //  li
-  //    margin: 0
-  //    &:first-child
-  //      width: 58%
-  //    &:last-child
-  //      width: 40%
-  //    a
-  //      width: 100%
-  //      padding: 9.5px 15px
-  //
-  //.all-models-result
-  //  width: 100%
-
-
-
-
-
-//@media (max-width: 380px)
-//  .benefit-table-list
-//    font-size: 11px
-//    line-height: normal
-//
-//  .benefit-table-col h3
-//    font-size: 10px
+  .car-availability-slider
+    .card-col
+      display: none
+      &:nth-child(-n+4)
+        display: block
 
 
 @media (max-width: 350px)
@@ -2911,16 +1906,3 @@
     h3
       font-size: 17px
 
-  //.page-product-box .list-characteristics-product
-  //  font-size: 12px
-  //
-  //.list-characteristics-product li:before
-  //  top: 15px
-
-  //.product-gallery-preview
-  //  .slide
-  //    padding: 0 2px
-
-  .home-manslizing
-    h1
-      max-width: 240px

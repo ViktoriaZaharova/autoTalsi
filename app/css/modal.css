@@ -71,5 +71,18 @@
 .form-modal {
   margin: 25px auto 0; }
 
-#thanksModal .modal-dialog {
+#thanksModal .modal-dialog, #thanks-successModal .modal-dialog {
   max-width: 525px; }
+
+#thanks-successModal .btn {
+  margin: 40px auto 0; }
+
+#thanks-successModal .modal-content {
+  padding: 64px 40px 60px;
+  border: none; }
+
+#thanks-successModal .box-text {
+  max-width: none; }
+
+#thanks-successModal .modal-body {
+  margin: 20px 0 0; }
