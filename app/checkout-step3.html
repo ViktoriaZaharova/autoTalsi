@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/intlTelInput.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -491,12 +492,12 @@
                 </div>
                 <div class="col-12 col-lg-5">
                   <label class="label-file">
-                    <input type="file" name="files[]" class="inp-file" multiple>
+                    <input type="file" class="inp-file" id="upload-demo" multiple>
                     <span class="input-file-icon"><svg class="svg-icon"><use
                         xlink:href="img/sprite.svg#image"></use></svg></span>
                     <span class="input-file-text">Прикрепить фото</span>
                   </label>
-                  <div class="files-list"></div>
+                  <div class="label-file-result queue" id="upload-demo-queue"></div>
                 </div>
               </div>
 
@@ -666,7 +667,7 @@
           <label>
             <input type="text" placeholder="Имя*" name="name">
           </label>
-          <label><input type="text" placeholder="Телефон" class="phone-input phone-input2" name="phone"></label>
+          <label><input type="text" placeholder="Телефон" class="phone-input phone-input5" name="phone"></label>
 
           <button type="submit" class="btn btn-accent"><span class="btn-text">подобрать авто</span></button>
 
@@ -715,7 +716,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/intlTelInput.js"></script>
-<script src="js/jquery.MultiFile.min.js"></script>
+<script src="js/fileup.js"></script>
 <script src="js/lazysizes.min.js"></script>
 <script src="js/common.js"></script>
 

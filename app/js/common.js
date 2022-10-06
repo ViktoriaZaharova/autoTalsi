@@ -66,18 +66,17 @@ $(document).ready(function () {
             "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
             "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
     });
-    //
-    // var input5 = document.querySelector(".phone-input5");
-    // window.intlTelInput(input5, {
-    //     separateDialCode: true,
-    //     defaultCountry: 'auto'
-    // });
-    //
-    // var input6 = document.querySelector(".phone-input6");
-    // window.intlTelInput(input6, {
-    //     separateDialCode: true,
-    //     defaultCountry: 'auto'
-    // });
+
+    var input5 = document.querySelector(".phone-input5");
+    window.intlTelInput(input5, {
+        // separateDialCode: true,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+
 
 });
 
@@ -388,6 +387,7 @@ $('.btn-search').on('click', function (e) {
     $('.mobile-search').fadeIn();
 });
 
+
 // slick active
 $(window).on('load resize', function() {
     if ($(window).width() < 992) {
@@ -396,8 +396,8 @@ $(window).on('load resize', function() {
             slidesToShow: 1,
             arrows: false,
             variableWidth: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
         });
 
         $('.collapsed-btn').attr('data-toggle', 'collapse');
@@ -435,6 +435,25 @@ $(window).on('load resize', function() {
     }
 });
 
+
+// progressbar
+function setProgress(index) {
+    const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+
+    $progressBar
+        .css('width', calc + '%')
+        .attr('aria-valuenow', calc);
+
+}
+
+const $slider = $('.category-cars-slider');
+const $progressBar = $('.progress-bg');
+
+$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    setProgress(nextSlide);
+
+});
+
 $('.sidebar [data-toggle="collapse"]').collapse({
     toggle: true,
 });
@@ -464,282 +483,5 @@ $('.load-more-wrap').on('click', function (e) {
 
 // show list all
 
-
-
-
-
-
-// $(function () {
-//     $("#filter__range").slider({
-//         min: 0,
-//         max: 10000,
-//         values: [1800, 6000],
-//         range: true,
-//         stop: function (event, ui) {
-//             $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
-//             $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
-//         },
-//         slide: function (event, ui) {
-//             $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
-//             $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
-//         }
-//     });
-//
-//     $('#filter__range .ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + '€' + $('#filter__range').slider('values', 0) + '</span>');
-//     $('#filter__range .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + '€' + $('#filter__range').slider('values', 1) + '</span>');
-// });
-
-
-// slick active
-
-//progressbar
-// function setProgress(index) {
-//     const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
-//
-//     $progressBar
-//         .css('width', calc + '%')
-//         .attr('aria-valuenow', calc);
-//
-// }
-//
-// const $slider = $('.category-cars-slider');
-// const $progressBar = $('.progress-bg');
-//
-// $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-//     setProgress(nextSlide);
-//
-// });
-
-
-
-// $('.btn-toggle-filter').on('click', function (e) {
-//     e.preventDefault();
-//     // $('.overlay-mobile').fadeIn();
-//     $('.filter-wrapper').fadeIn();
-// });
-
-// $('.btn-close__filter, .overlay-mobile').on('click', function (e) {
-//     e.preventDefault();
-//     $('.filter-wrapper').fadeOut();
-//     // $('.overlay-mobile').fadeOut();
-// });
-
-
-
-
-
-
-
-
-// input focus
-// $("input,textarea").focus(function () {
-//     $(this).parent().addClass("focus");
-// }).blur(function () {
-//     if ($(this).val() === '') {
-//         $(this).parent().removeClass("focus");
-//     }
-// });
-
-// $('input, textarea').each(function () {
-//     var $this = $(this),
-//         val = $this.val();
-//
-//     if (val.length >= 1) {
-//         $(this).parent().addClass("focus");
-//     } else {
-//         $(this).parent().removeClass("focus");
-//     }
-// });
-//
-// $(".label-select").on('click', function () {
-//     $(this).addClass("focus");
-// }).blur(function () {
-//     if ($(this).find('select').val() === '') {
-//         $(this).removeClass("focus");
-//     }
-// });
-
-
-
-//
-// $('.slider-range3').slider({
-//     range: true,
-//     min: 0,
-//     max: 25000,
-//     values: [1800, 18000],
-//     classes: {
-//         "ui-slider-handle": "ui-corner-all"
-//     },
-//     slide: function (event, ui) {
-//         //Поле минимального значения
-//         $(".dec5").val(ui.values[0]);
-//         //Поле максимального значения
-//         $(".dec6").val(ui.values[1]);
-//     }
-// });
-//
-//
-// $(".dec5").val($(".slider-range3").slider("values", 0));
-// $(".dec6").val($(".slider-range3").slider("values", 1));
-//
-
-
-// accordeon
-// function accordeon() {
-//     var panel = $('.panel-heading');
-//
-//     if (panel.hasClass('in')) {
-//         $('.in').find('.block_hover').slideDown();
-//     }
-//
-//     $('.panel-heading .block_title').on('click', function () {
-//         $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
-//     });
-// }
-//
-// accordeon();
-
-// modal
-// $(function () {
-//     var overlay = $('.overlay'),
-//         open_modal = $('.open_modal'),
-//         close = $('.modal__close, .overlay'),
-//         modal = $('.modal__div');
-//
-//     open_modal.on('click', function (event) {
-//         event.preventDefault();
-//
-//         modal.css('display', 'none').animate({
-//             opacity: 0,
-//             top: '45%'
-//         }, 200);
-//
-//         var div = $(this).attr('href');
-//         overlay.fadeIn(400,
-//             function () {
-//                 $(div)
-//                     .css('display', 'flex')
-//                     .animate({
-//                         opacity: 1,
-//                         top: '50%'
-//                     }, 200);
-//             });
-//     });
-//
-//     close.on('click', function () {
-//         modal
-//             .animate({
-//                     opacity: 0,
-//                     top: '45%'
-//                 }, 200,
-//                 function () {
-//                     $(this).css('display', 'none');
-//                     overlay.fadeOut(400);
-//                 }
-//             );
-//     });
-// });
-//end
-
-
-// $('.btn-search').on('click', function () {
-//     $(this).toggleClass('open');
-//     $('.overlay-mobile').fadeToggle();
-//     $('.mobile-filter').fadeToggle();
-// });
-
-// $('.brands-slider').slick({
-//     slidesToShow: 2,
-//     arrows: false,
-//     dots: true,
-//     variableWidth: true
-// });
-
-
-
-
-
-// var $pagingInfo = $('.counter-slide');
-// var $teamSlider = $('.page-article-slider');
-//
-// $teamSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-//     var i = (currentSlide ? currentSlide : 0) + 1;
-//     var prefix = i < 10 ? '0' : '';
-//     var prefixAll = slick.slideCount < 10 ? '0' : '';
-//     $pagingInfo.html('<span class="current">' + prefix + i + '</span>' + '' + '<span class="total">' + prefixAll + slick.slideCount + '</span>');
-// });
-//
-// $('.page-article-slider').slick({
-//     slidesToShow: 1,
-//     // fade: true,
-//     appendArrows: '.page-article-slider__nav',
-//     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-//     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-// });
-
-
-
-
-// if ($(".page-product-information__head").length) {
-//     $('.page-product-information__head').clone().appendTo('.title-mobile');
-// }
-
-// $('.characteristics-item h5').on('click', function () {
-//     $(this).toggleClass('click').siblings('ul').slideToggle();
-// });
-
-// tabs
-// $(document).ready(function ($) {
-//     $('.tabs li a').click(function (e) {
-//         e.preventDefault();
-//     });
-//     $('.tabs li').click(function () {
-//         $('.tabs li').removeClass('active');
-//         $(this).addClass('active');
-//         $('.tab_content').removeClass('active')
-//
-//         var selectTab = $(this).find('a').attr("href");
-//
-//         $(selectTab).addClass('active');
-//     });
-// });
-// tabs end
-
-
-// $(window).on('load resize', function () {
-//     if ($(window).width() < 576) {
-//         var header = $('header'),
-//             scrollPrev = 0;
-//
-//         $(window).scroll(function () {
-//             var scrolled = $(window).scrollTop();
-//
-//             if (scrolled > 100 && scrolled > scrollPrev) {
-//                 $('.mobile-vehicle-chat-sms').css('bottom', '0');
-//             } else {
-//                 $('.mobile-vehicle-chat-sms').css('bottom', '-100%');
-//             }
-//             scrollPrev = scrolled;
-//         });
-//
-//     }
-// });
-
-// $('.mobile-vehicle-chat-sms').on('click', function (e) {
-//     e.preventDefault();
-//     $('.overlay').fadeIn();
-//     $('.welcome-popup').css('bottom', '0');
-// });
-//
-// $('.welcome-popup__close, .overlay').on('click', function (e) {
-//     e.preventDefault();
-//     $('.welcome-popup').css('bottom', '-100%');
-//     $('.overlay').fadeOut();
-// });
-//
-// $('.btn-close-cookie').on('click', function (e) {
-//     e.preventDefault();
-//     $('.cookie').fadeOut();
-// });
 
 
