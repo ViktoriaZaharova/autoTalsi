@@ -446,6 +446,9 @@
     margin: 0; }
   .page-product-box .collapse:not(.show) {
     display: block; }
+  .page-product-box .collapsing {
+    height: auto;
+    overflow: visible; }
 
 .characteristics-wrap {
   width: 100%;
@@ -458,10 +461,6 @@
   margin: 0 0 30px; }
   .page-product-box__item:last-child {
     margin: 0; }
-
-.collapsing {
-  height: auto;
-  overflow: visible; }
 
 .quick-contacts-item {
   position: relative;

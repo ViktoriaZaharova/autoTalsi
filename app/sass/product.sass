@@ -145,7 +145,6 @@
   padding: 30px 20px
   border-radius: 20px
   background: #3570F2
-  //overflow: hidden
   &:before
     content: ''
     position: absolute
@@ -340,7 +339,6 @@
 
   &__head
     width: 100%
-
     padding: 30px 20px 20px 40px
 
   &__body
@@ -373,6 +371,9 @@
     margin: 0
   .collapse:not(.show)
     display: block
+  .collapsing
+    height: auto
+    overflow: visible
 
 .characteristics-wrap
   width: 100%
@@ -385,9 +386,7 @@
   &:last-child
     margin: 0
 
-.collapsing
-  height: auto
-  overflow: visible
+
 
 
 

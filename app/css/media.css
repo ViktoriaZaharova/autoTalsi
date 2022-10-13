@@ -716,7 +716,9 @@
     .documents .box-text {
       max-width: none; }
   .callback-v2 .form-callback label, .callback-v2 .form-callback button {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .form-success-box {
+    min-height: auto; } }
 
 @media only screen and (max-width: 576px) {
   .footer-top__content {
@@ -1258,7 +1260,10 @@
       top: -40px;
       right: -170px; }
   .reviews.m-80 {
-    margin: 60px 0; } }
+    margin: 60px 0; }
+  .fileup-file.fileup-image .fileup-preview {
+    width: 56px;
+    height: 48px; } }
 
 @media (max-width: 480px) {
   .card-footer {
