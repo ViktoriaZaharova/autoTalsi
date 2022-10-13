@@ -454,9 +454,9 @@ $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 
 });
 
-$('.sidebar [data-toggle="collapse"]').collapse({
-    toggle: true,
-});
+// $('.sidebar [data-toggle="collapse"]').collapse({
+//     toggle: true,
+// });
 
 
 // hidden list > 5
