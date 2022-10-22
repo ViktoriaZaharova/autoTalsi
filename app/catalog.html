@@ -607,7 +607,14 @@
       </div>
 
       <div class="col-12 col-lg-9">
-        <h1>Каталог автомобилей: </h1>
+
+        <div class="title-row">
+          <h1>Каталог автомобилей:</h1>
+
+          <ul class="list-tags d-flex d-lg-none ul-my">
+            <li><a href="#" class="bg-red">Акция</a></li>
+          </ul>
+        </div>
 
         <div class="catalog-mobile-nav">
           <div class="btn-catalog btn-filter">
@@ -639,6 +646,10 @@
               </select>
             </label>
           </div>
+
+          <ul class="list-tags ul-my">
+            <li><a href="#" class="bg-red">Акция</a></li>
+          </ul>
 
         </div>
 
@@ -1262,7 +1273,8 @@
       <div class="col-12 col-lg-6">
         <form method="post" class="form-callback">
           <label><input type="text" placeholder="Имя*" name="name" required></label>
-          <label><input type="text" placeholder="Телефон" class="phone-input phone-input1" name="phone" required></label>
+          <label><input type="text" placeholder="Телефон" class="phone-input phone-input1" name="phone"
+                        required></label>
           <button type="submit" class="btn btn-accent">Проверить условия</button>
 
           <label class="checkbox">
@@ -1421,6 +1433,9 @@
     </div>
   </div>
 </div>
+
+
+<a href="#" class="maps-fixed"><img src="img/waze.svg" alt=""></a>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
