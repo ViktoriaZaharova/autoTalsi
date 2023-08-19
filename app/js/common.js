@@ -403,9 +403,9 @@ $(window).on('load resize', function() {
         $('.collapsed-btn').attr('data-toggle', 'collapse');
     } else {
         $(".category-cars-slider.slick-initialized").slick("unslick");
-        $('.product-characteristics .collapse').collapse({
-            toggle: false
-        })
+			$('.product-characteristics .collapse').collapse({
+				toggle: false
+			});
     }
 
     if ($(window).width() > 576) {

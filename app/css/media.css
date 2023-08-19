@@ -1267,7 +1267,13 @@
   .maps-fixed {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .title-row .list-tags {
+    width: calc(50% - 5px); }
+    .title-row .list-tags li {
+      width: 100%; }
+      .title-row .list-tags li a {
+        width: 100%; } }
 
 @media (max-width: 480px) {
   .card-footer {
